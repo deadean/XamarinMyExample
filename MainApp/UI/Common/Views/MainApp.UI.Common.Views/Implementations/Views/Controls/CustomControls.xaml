@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:labels="clr-namespace:MainApp.UI.Common.Views.Controls.Implementations.Labels;assembly=MainApp.UI.Common.Views"
+             x:Class="MainApp.UI.Common.Views.Implementations.Views.Controls.CustomControls">
+  <StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="AltLabel BindableProperty\Bindable readonly property" />
+      <StackLayout >
+        <StackLayout Orientation="Horizontal">
+          <labels:AltLabel Text="Text of 4 points" PointSize="4" x:Name="Label1"/>
+          <Label TextColor="Lime" Text="{Binding WordCount, StringFormat='DataBinding with StringFormat to ReadOnly Bindable Property WordCount:{0}'}"
+                 BindingContext="{x:Reference Label1}"/>
+        </StackLayout>
+        <labels:AltLabel Text="Text of 5 points" PointSize="5" />
+        <labels:AltLabel Text="Text of 6 points" PointSize="6" />
+        <labels:AltLabel Text="Text of 7 points" PointSize="7" />
+        <labels:AltLabel Text="Text of 8 points" PointSize="8" />
+        <labels:AltLabel Text="Text of 9 points" PointSize="9" />
+        <labels:AltLabel Text="Text of 10 points" PointSize="10" />
+        <labels:AltLabel Text="Text of 11 points" PointSize="11" />
+        <labels:AltLabel Text="Text of 12 points" PointSize="12" />
+      </StackLayout>
+    </StackLayout>
+  </StackLayout>
+</ContentPage>

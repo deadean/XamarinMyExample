@@ -1,0 +1,16 @@
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Common\Library\bin\Debug\Library.dll.config
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Common\Library\bin\Debug\Library.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Common\Library\bin\Debug\Library.pdb
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Common\Library\bin\Debug\GalaSoft.MvvmLight.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Common\Library\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Common\Library\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Common\Library\bin\Debug\Mutzl.MvvmLight.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Common\Library\bin\Debug\GalaSoft.MvvmLight.pdb
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Common\Library\bin\Debug\GalaSoft.MvvmLight.xml
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Common\Library\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Common\Library\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Common\Library\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Common\Library\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Common\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Common\Library\obj\Debug\Library.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Common\Library\obj\Debug\Library.pdb

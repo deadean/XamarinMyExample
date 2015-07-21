@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="MainApp.UI.Common.Views.Implementations.Views.XAML.PageStyle">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <Color x:Key="txtColor" x:FactoryMethod="FromHsla">
+        <x:Arguments>
+          <x:Double>0.83</x:Double>
+          <x:Double>1</x:Double>
+          <x:Double>0.75</x:Double>
+          <x:Double>1</x:Double>
+        </x:Arguments>
+      </Color>
+
+      <Style x:Key="styleTxtColor" TargetType="Button">
+        <Setter Property="TextColor" Value="{StaticResource txtColor}" />
+      </Style>
+
+      <Style x:Key="visualStyle" TargetType="VisualElement">
+        <Setter Property="BackgroundColor" Value="{toolkit:HslColor H=0, S=1, L=0.8}" />
+      </Style>
+      <Style x:Key="baseStyle" TargetType="View" BasedOn="{StaticResource visualStyle}">
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+      </Style>
+      <Style x:Key="labelStyle" TargetType="toolkit:AltLabel" BasedOn="{StaticResource baseStyle}">
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="PointSize" Value="12" />
+      </Style>
+      <Style x:Key="buttonStyle" TargetType="Button" BasedOn="{StaticResource baseStyle}">
+        <Setter Property="TextColor" Value="Blue" />
+        <Setter Property="FontSize" Value="Large" />
+        <Setter Property="BorderColor" Value="Blue" />
+        <Setter Property="BorderWidth">
+          <Setter.Value>
+            <OnPlatform x:TypeArguments="x:Double" iOS="1" Android="2" WinPhone="3" />
+          </Setter.Value>
+        </Setter>
+      </Style>
+      <Style x:Key="Style1" TargetType="Button">
+        <Setter Property="WidthRequest" Value="200"/>
+      </Style>
+      <Style x:Key="Style2" TargetType="Button">
+        <Setter Property="WidthRequest" Value="400"/>
+      </Style>
+      <Style x:Key="newSubtitleStyle" TargetType="Label" BaseResourceKey="SubtitleStyle">
+        <Setter Property="TextColor" Value="Accent" />
+        <Setter Property="FontAttributes" Value="Italic" />
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ContentPage.Style>
+    <StaticResourceExtension Key="visualStyle" />
+  </ContentPage.Style>
+  <StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Using defined style in XAML"/>
+      <Button Text="Click" Style="{StaticResource styleTxtColor}"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Using defined style in code behind"/>
+      <Button Text="Click" x:Name="button"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Using style inheritance"/>
+      <StackLayout>
+        <Button Text=" Do this! " Style="{StaticResource buttonStyle}" />
+        <toolkit:AltLabel Text ="A bit of text" Style="{StaticResource labelStyle}" />
+        <Button Text=" Do that! " Style="{StaticResource buttonStyle}" />
+        <toolkit:AltLabel Text ="Another bit of text" Style="{StaticResource labelStyle}" />
+        <Button Text=" Do the other thing! " Style="{StaticResource buttonStyle}" />
+      </StackLayout>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Using implicit style defined in Global App.xaml"/>
+      <Label Text="Label style"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Dynamic Style"/>
+      <Button Text="Example changing width by dynamic style" Style="{DynamicResource buttonStyleDynamic}"/>
+      <Button Text="Style1" Clicked="OnClick1"/>
+      <Button Text="Style2" Clicked="OnClick2"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Device Dynamic Style"/>
+      <ScrollView>
+        <StackLayout Spacing="20">
+          <StackLayout>
+            <StackLayout HorizontalOptions="Start">
+              <Label Text="Device styles set with DynamicResource" />
+              <BoxView Color="Accent" HeightRequest="3" />
+            </StackLayout>
+            <Label Text="No Style whatsoever" />
+            <Label Text="Body Style" Style="{DynamicResource BodyStyle}" />
+            <Label Text="Title Style" Style="{DynamicResource TitleStyle}" />
+            <Label Text="Subtitle Style" Style="{DynamicResource SubtitleStyle}" />
+            <!-- Uses style derived from device style. -->
+            <Label Text="New Subtitle Style" Style="{StaticResource newSubtitleStyle}" />
+            <Label Text="Caption Style" Style="{DynamicResource CaptionStyle}" />
+            <Label Text="List Item Text Style" Style="{DynamicResource ListItemTextStyle}" />
+            <Label Text="List Item Detail Text Style" Style="{DynamicResource ListItemDetailTextStyle}" />
+          </StackLayout>
+          <!-- Device styles set in code -->
+          <StackLayout x:Name="codeLabelStack">
+            <StackLayout HorizontalOptions="Start">
+              <Label Text="Device styles set in code:" />
+              <BoxView Color="Accent" HeightRequest="3" />
+            </StackLayout>
+          </StackLayout>
+        </StackLayout>
+      </ScrollView>
+    </StackLayout>
+  </StackLayout>
+</ContentPage>

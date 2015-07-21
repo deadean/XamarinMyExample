@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>АДМИН</Machine>
+    <WindowsUser>deadean</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>98be89e9-554d-49fa-97a7-14220771bb4a</PackageIdentityName>
+    <IntermediateOutputPath>E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp.Windows81\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>D647D8875713BC0BA51576137266F41A4DDDD4964C76EC98B4AFEBF701432911</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>98be89e9-554d-49fa-97a7-14220771bb4a_1.0.0.0_neutral__rt5b99n6eygjw</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>98be89e9-554d-49fa-97a7-14220771bb4a_rt5b99n6eygjw!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>98be89e9-554d-49fa-97a7-14220771bb4a</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=deadean</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp.Windows81\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-21T11:43:46.605</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp.Windows81\bin\Debug\MainApp.Windows81.exe">
+      <PackagePath>MainApp.Windows81.exe</PackagePath>
+      <Modified>2015-07-21T11:43:45.714</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Portable.MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.dll">
+      <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
+      <Modified>2015-07-10T10:18:51.265</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Portable.MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.Extras.dll">
+      <PackagePath>GalaSoft.MvvmLight.Extras.dll</PackagePath>
+      <Modified>2015-07-10T10:18:51.265</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Portable.MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.Platform.dll">
+      <PackagePath>GalaSoft.MvvmLight.Platform.dll</PackagePath>
+      <Modified>2015-07-10T10:18:51.281</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\MainApp.dll">
+      <PackagePath>MainApp.dll</PackagePath>
+      <Modified>2015-07-21T11:43:43.261</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Services\MainApp.Services\bin\Debug\MainApp.Services.dll">
+      <PackagePath>MainApp.Services.dll</PackagePath>
+      <Modified>2015-07-19T11:23:59.733</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
+      <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
+      <Modified>2015-07-10T10:18:50.718</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Mutzl.Mvvm.DependentRelayCommand.0.9.5.0\lib\Mutzl.MvvmLight.dll">
+      <PackagePath>Mutzl.MvvmLight.dll</PackagePath>
+      <Modified>2015-07-10T10:18:50.718</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Forms.Windows.1.4.2.6355\lib\win81\Xamarin.Forms.Core.dll">
+      <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
+      <Modified>2015-07-10T10:20:35.864</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Forms.1.4.2.6355\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Platform.dll">
+      <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
+      <Modified>2015-07-10T10:18:59.003</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Forms.Windows.1.4.2.6355\lib\win81\Xamarin.Forms.Platform.WinRT.dll">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.dll</PackagePath>
+      <Modified>2015-07-10T10:20:35.874</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Forms.Windows.1.4.2.6355\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet.dll">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet.dll</PackagePath>
+      <Modified>2015-07-10T10:20:35.875</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Forms.Windows.1.4.2.6355\lib\win81\Xamarin.Forms.Xaml.dll">
+      <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
+      <Modified>2015-07-10T10:20:35.886</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\MainApp.UI.Common.dll">
+      <PackagePath>MainApp.UI.Common.dll</PackagePath>
+      <Modified>2015-07-19T11:24:00.687</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\MainApp.UI.Data.dll">
+      <PackagePath>MainApp.UI.Data.dll</PackagePath>
+      <Modified>2015-07-19T11:24:01.671</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\MainApp.UI.Services.dll">
+      <PackagePath>MainApp.UI.Services.dll</PackagePath>
+      <Modified>2015-07-19T11:24:02.843</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\MainApp.UI.Common.VVms.dll">
+      <PackagePath>MainApp.UI.Common.VVms.dll</PackagePath>
+      <Modified>2015-07-21T11:33:38.673</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\MainApp.Data.dll">
+      <PackagePath>MainApp.Data.dll</PackagePath>
+      <Modified>2015-07-19T11:23:58.937</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\MainProject.Common.dll">
+      <PackagePath>MainProject.Common.dll</PackagePath>
+      <Modified>2015-07-19T11:23:57.499</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\MainApp.UI.DataBases.dll">
+      <PackagePath>MainApp.UI.DataBases.dll</PackagePath>
+      <Modified>2015-07-19T11:24:36.890</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\MainApp.UI.Common.Views.dll">
+      <PackagePath>MainApp.UI.Common.Views.dll</PackagePath>
+      <Modified>2015-07-21T11:43:40.558</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\Library.dll">
+      <PackagePath>Library.dll</PackagePath>
+      <Modified>2015-07-19T11:23:57.562</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\SQLite.Net.dll">
+      <PackagePath>SQLite.Net.dll</PackagePath>
+      <Modified>2015-07-10T10:18:55.946</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\SQLiteNetExtensions.dll">
+      <PackagePath>SQLiteNetExtensions.dll</PackagePath>
+      <Modified>2015-07-10T10:18:56.008</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\XLabs.Platform.dll">
+      <PackagePath>XLabs.Platform.dll</PackagePath>
+      <Modified>2015-07-10T10:20:38.965</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\XLabs.Ioc.dll">
+      <PackagePath>XLabs.Ioc.dll</PackagePath>
+      <Modified>2015-07-10T10:20:38.027</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\SQLite.Net.Async.dll">
+      <PackagePath>SQLite.Net.Async.dll</PackagePath>
+      <Modified>2015-07-10T10:18:55.899</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\SQLiteNetExtensionsAsync.dll">
+      <PackagePath>SQLiteNetExtensionsAsync.dll</PackagePath>
+      <Modified>2015-07-10T10:18:56.180</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\XLabs.Forms.dll">
+      <PackagePath>XLabs.Forms.dll</PackagePath>
+      <Modified>2015-07-10T10:20:37.607</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2015-07-10T10:18:56.118</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\XLabs.Core.dll">
+      <PackagePath>XLabs.Core.dll</PackagePath>
+      <Modified>2015-07-10T10:20:36.890</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\XLabs.Serialization.dll">
+      <PackagePath>XLabs.Serialization.dll</PackagePath>
+      <Modified>2015-07-10T10:20:39.663</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp.Windows81\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-09T11:38:49.777</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp.Windows81\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-09T11:38:49.777</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp.Windows81\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-09T11:38:49.838</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp.Windows81\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-09T11:38:49.839</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\UI\Common\Views\MainApp.UI.Common.Views\Implementations\Views\MainPage\ResourcesIcon\MakePhoto.png">
+      <PackagePath>MainApp.UI.Common.Views\Implementations\Views\MainPage\ResourcesIcon\MakePhoto.png</PackagePath>
+      <Modified>2015-07-09T11:38:50.964</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\UI\Common\Views\MainApp.UI.Common.Views\Implementations\Views\MainPage\ResourcesIcon\OpenPhoto.png">
+      <PackagePath>MainApp.UI.Common.Views\Implementations\Views\MainPage\ResourcesIcon\OpenPhoto.png</PackagePath>
+      <Modified>2015-07-09T11:38:50.974</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\UI\Common\Views\MainApp.UI.Common.Views\Implementations\Views\MainPage\ResourcesIcon\Synchronization.png">
+      <PackagePath>MainApp.UI.Common.Views\Implementations\Views\MainPage\ResourcesIcon\Synchronization.png</PackagePath>
+      <Modified>2015-07-09T11:38:50.977</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp.Windows81\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-07-10T11:27:52.181</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp.Windows81\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-07-10T11:27:52.182</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp.Windows81\bin\Debug\MainApp.Windows81.xr.xml">
+      <PackagePath>MainApp.Windows81.xr.xml</PackagePath>
+      <Modified>2015-07-10T10:21:28.918</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\bin\Debug\Xamarin.FormsBook.Toolkit.dll">
+      <PackagePath>Xamarin.FormsBook.Toolkit.dll</PackagePath>
+      <Modified>2015-07-19T11:23:58.562</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Forms.Windows.1.4.2.6355\lib\win81\Xamarin.Forms.Platform.WinRT\FormsTextBox.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\FormsTextBox.xbf</PackagePath>
+      <Modified>2015-07-10T10:20:35.880</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Forms.Windows.1.4.2.6355\lib\win81\Xamarin.Forms.Platform.WinRT\PageControl.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\PageControl.xbf</PackagePath>
+      <Modified>2015-07-10T10:20:35.881</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Forms.Windows.1.4.2.6355\lib\win81\Xamarin.Forms.Platform.WinRT\Resources.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\Resources.xbf</PackagePath>
+      <Modified>2015-07-10T10:20:35.884</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Forms.Windows.1.4.2.6355\lib\win81\Xamarin.Forms.Platform.WinRT\StepperControl.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\StepperControl.xbf</PackagePath>
+      <Modified>2015-07-10T10:20:35.885</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Forms.Windows.1.4.2.6355\lib\win81\Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml</PackagePath>
+      <Modified>2015-07-10T10:20:35.886</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Forms.Windows.1.4.2.6355\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\TabletMergeControl.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\TabletMergeControl.xbf</PackagePath>
+      <Modified>2015-07-10T10:20:35.878</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Forms.Windows.1.4.2.6355\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf</PackagePath>
+      <Modified>2015-07-10T10:20:35.878</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Forms.Windows.1.4.2.6355\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml</PackagePath>
+      <Modified>2015-07-10T10:20:35.879</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp.Windows81\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-07-21T11:43:46.308</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

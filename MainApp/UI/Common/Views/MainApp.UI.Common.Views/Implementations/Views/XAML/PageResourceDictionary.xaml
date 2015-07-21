@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MainApp.UI.Common.Constants;assembly=MainApp.UI.Common"
+             xmlns:toolkit="clr-namespace:Xamarin.FormsBook.Toolkit;assembly=Xamarin.FormsBook.Toolkit"
+             x:Class="MainApp.UI.Common.Views.Implementations.Views.XAML.PageResourceDictionary">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<LayoutOptions x:Key="horzOptions">Center</LayoutOptions>
+
+			<LayoutOptions x:Key="vertOptions"
+										 Alignment="Center"
+										 Expands="False" />
+
+			<x:Double x:Key="borderWidth">3</x:Double>
+
+			<Color x:Key="textColor">Red</Color>
+
+			<x:String x:Key="fontSize">10</x:String>
+			<x:String x:Key="currentDateTime">Not actually a DateTime</x:String>
+			<!--<x:Array x:Key="array" Type="{x:Type x:String}">
+				<x:String>One String</x:String>
+				<x:String>Two String</x:String>
+				<x:String>Red String</x:String>
+				<x:String>Blue String</x:String>
+			</x:Array>-->
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
+	<StackLayout>
+		<Button Text=" Do this! ">
+			<Button.HorizontalOptions>
+				<StaticResourceExtension Key="horzOptions" />
+			</Button.HorizontalOptions>
+
+			<Button.VerticalOptions>
+				<StaticResourceExtension Key="vertOptions" />
+			</Button.VerticalOptions>
+
+			<Button.BorderWidth>
+				<StaticResourceExtension Key="borderWidth" />
+			</Button.BorderWidth>
+
+			<Button.TextColor>
+				<StaticResourceExtension Key="textColor" />
+			</Button.TextColor>
+
+			<Button.FontSize>
+				<StaticResourceExtension Key="fontSize" />
+			</Button.FontSize>
+		</Button>
+
+		<Button Text=" Do that! "
+						HorizontalOptions="{StaticResource Key=horzOptions}"
+						VerticalOptions="{StaticResource Key=vertOptions}"
+						BorderWidth="{StaticResource Key=borderWidth}"
+						TextColor="{StaticResource Key=textColor}"
+						FontSize="{StaticResource Key=fontSize}" />
+
+		<Button Text=" Do the other thing! "
+						HorizontalOptions="{StaticResource horzOptions}"
+						VerticalOptions="{StaticResource vertOptions}"
+						BorderWidth="{StaticResource borderWidth}"
+						TextColor="{StaticResource textColor}"
+						FontSize="{StaticResource fontSize}" />
+
+
+		<StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Settings from AppConstants.cs"/>
+				<StackLayout Padding="10, 0" Spacing="{x:Static local:AppConstants.ParagraphSpacing}">
+
+					<Label Text="The SharedStatics Program"
+								 TextColor="{x:Static local:AppConstants.LightBackground}"
+								 FontSize="{x:Static local:AppConstants.TitleFontSize}"
+								 FontAttributes="{x:Static local:AppConstants.TitleAttribute}"
+								 XAlign="{x:Static local:AppConstants.TitleAlignment}" />
+
+					<Label TextColor="{x:Static local:AppConstants.LightBackground}"
+								 FontSize="{x:Static local:AppConstants.NormalFontSize}">
+						<Label.FormattedText>
+							<FormattedString>
+								<Span Text="Through use of the " />
+								<Span Text="x:Static"
+											FontSize="{x:Static local:AppConstants.NormalFontSize}"
+											FontAttributes="{x:Static local:AppConstants.Emphasis}" />
+								<Span Text="Text " />
+							</FormattedString>
+						</Label.FormattedText>
+					</Label>
+
+					<Label TextColor="{x:Static local:AppConstants.DarkForeground}"
+								 FontSize="{x:Static local:AppConstants.NormalFontSize}">
+						<Label.FormattedText>
+							<FormattedString>
+								<Span Text="Text" />
+								<Span Text="ResourceDictionary"
+											FontSize="{x:Static local:AppConstants.NormalFontSize}"
+											FontAttributes="{x:Static local:AppConstants.Emphasis}" />
+								<Span Text=" and access them through the " />
+								<Span Text="StaticResource"
+											FontSize="{x:Static local:AppConstants.NormalFontSize}"
+											FontAttributes="{x:Static local:AppConstants.Emphasis}" />
+								<Span Text=" markup extension, and even encapsultate multiple property settings in a " />
+								<Span Text="Style"
+											FontSize="{x:Static local:AppConstants.NormalFontSize}"
+											FontAttributes="{x:Static local:AppConstants.Emphasis}" />
+								<Span Text=" object." />
+							</FormattedString>
+						</Label.FormattedText>
+					</Label>
+				</StackLayout>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Settings from Global App.xaml"/>
+				<Label Text="Text" FontSize="{StaticResource Key=fontSizeGlobal}" />
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal">
+				<Label Text="DynamicResource on Label.Text:" />
+				<Label Text="{DynamicResource currentDateTime}" XAlign="Center"/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal">
+				<Label Text="StaticResource Array" />
+				<!--<ListView ItemsSource="{StaticResource Key=array}"/>-->
+			</StackLayout>
+
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Xamarin.Books.Toolkit HslColorExtension" />
+        <StackLayout>
+          <!-- Red -->
+          <BoxView HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand">
+            <BoxView.Color>
+              <toolkit:HslColorExtension H="0" S="1" L="0.5" />
+            </BoxView.Color>
+          </BoxView>
+
+          <!-- Green -->
+          <BoxView HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand">
+            <BoxView.Color>
+              <toolkit:HslColorExtension H="0.33" S="1" L="0.5" />
+            </BoxView.Color>
+          </BoxView>
+
+          <!-- Blue -->
+          <BoxView Color="{toolkit:HslColorExtension H=0.67, S=1, L=0.5}"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+
+          <!-- Gray -->
+          <BoxView Color="{toolkit:HslColor H=0, S=0, L=0.5}"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+
+          <!-- Semitransparent white -->
+          <BoxView Color="{toolkit:HslColor H=0, S=0, L=1, A=0.5}"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+
+          <!-- Semitransparent black -->
+          <BoxView Color="{toolkit:HslColor H=0, S=0, L=0, A=0.5}"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+      </StackLayout>
+
+	</StackLayout>
+	</StackLayout>
+</ContentPage>

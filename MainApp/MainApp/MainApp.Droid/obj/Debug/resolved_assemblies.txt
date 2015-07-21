@@ -1,0 +1,82 @@
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\MainApp.Droid.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\ExifLib.PCL.1.0.0\lib\portable-net45+sl50+win+WindowsPhoneApp81+wp80+MonoAndroid10+MonoTouch10\ExifLib.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Forms.1.3.1.6296\lib\MonoAndroid10\FormsViewGroup.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Portable.MvvmLightLibs.5.0.2.0\lib\monoandroid\GalaSoft.MvvmLight.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Portable.MvvmLightLibs.5.0.2.0\lib\monoandroid\GalaSoft.MvvmLight.Extras.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Portable.MvvmLightLibs.5.0.2.0\lib\monoandroid\GalaSoft.MvvmLight.Platform.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp\bin\Debug\MainApp.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\Services\MainApp.Services\bin\Debug\MainApp.Services.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Mutzl.Mvvm.DependentRelayCommand.0.9.5.0\lib\Mutzl.MvvmLight.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Android.Support.v4.19.0.2\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Forms.1.3.1.6296\lib\MonoAndroid10\Xamarin.Forms.Core.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Forms.1.3.1.6296\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\packages\Xamarin.Forms.1.3.1.6296\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.Concurrent.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ComponentModel.Annotations.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ComponentModel.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ComponentModel.EventBasedAsync.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Diagnostics.Contracts.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Diagnostics.Debug.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Diagnostics.Tools.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Diagnostics.Tracing.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Dynamic.Runtime.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Globalization.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.IO.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Linq.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Linq.Expressions.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Linq.Parallel.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Linq.Queryable.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Net.NetworkInformation.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Net.Primitives.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Net.Requests.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ObjectModel.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.Emit.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.Emit.ILGeneration.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.Emit.Lightweight.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.Extensions.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.Primitives.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Resources.ResourceManager.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.Extensions.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.InteropServices.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.InteropServices.WindowsRuntime.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.Numerics.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.Serialization.Json.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.Serialization.Primitives.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.Serialization.Xml.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Security.Principal.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ServiceModel.Http.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ServiceModel.Primitives.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ServiceModel.Security.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Text.Encoding.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Text.Encoding.Extensions.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Text.RegularExpressions.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Threading.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Threading.Tasks.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Threading.Tasks.Parallel.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Threading.Timer.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Xml.ReaderWriter.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Xml.XDocument.dll
+C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Xml.XmlSerializer.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\MainApp.UI.Common.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\Library.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\MainApp.Data.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\MainProject.Common.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\MainApp.UI.Data.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\SQLite.Net.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\SQLiteNetExtensions.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\Newtonsoft.Json.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\MainApp.UI.Services.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\XLabs.Platform.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\XLabs.Core.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\XLabs.Ioc.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\MainApp.UI.Common.VVms.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\MainApp.UI.DataBases.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\SQLite.Net.Async.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\SQLiteNetExtensionsAsync.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\MainApp.UI.Common.Views.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\XLabs.Forms.dll
+E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\XLabs.Serialization.dll
