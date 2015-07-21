@@ -86,6 +86,7 @@
     </Compile>
     <Compile Include="Implementations\Xaml\GetPropertyExtension.cs" />
     <Compile Include="Implementations\Xaml\IconExtension.cs" />
+    <Compile Include="Implementations\Xaml\ImageFromFileExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

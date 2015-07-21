@@ -15,6 +15,14 @@ namespace MainApp.UI.Common.Views.Implementations.Views.Pages
 			InitializeComponent();
 			ResizeImage();
 			ImageFromWebUrl();
+			ImageFromResource();
+		}
+
+		private void ImageFromResource()
+		{
+			//var res = ImageSource.FromResource("MainAppUICommonResources.Images.ModernUserInterface256.jpg");
+			var res = ImageSource.FromFile("Assets\\ModernUserInterface256.jpg");
+			this._photo.Source = res;
 		}
 
 		private void ImageFromWebUrl()

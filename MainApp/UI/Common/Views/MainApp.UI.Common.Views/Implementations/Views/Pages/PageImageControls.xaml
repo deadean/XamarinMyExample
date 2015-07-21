@@ -1,23 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ext="clr-namespace:MainApp.UI.Common.Views.Implementations.Xaml;assembly=MainApp.UI.Common.Views"
              x:Class="MainApp.UI.Common.Views.Implementations.Views.Pages.PageImageControls">
-  <StackLayout>
-    <StackLayout Orientation="Horizontal">
-      <Label Text="Image from web URL from code"/>
-      <Image x:Name="img1" VerticalOptions="Fill" HorizontalOptions="Fill" HeightRequest="200" WidthRequest="200"/>
+  <ScrollView>
+    <StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Image from web URL from code"/>
+        <Image x:Name="img1" VerticalOptions="Fill" HorizontalOptions="Fill" HeightRequest="200" WidthRequest="200"/>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Image from web URL from XAML with caching and aspect fill"/>
+        <Image HeightRequest="200" Aspect="Fill">
+          <Image.Source>
+            <UriImageSource Uri="http://developer.xamarin.com/demo/IMG_1415.JPG"/>
+          </Image.Source>
+        </Image>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Image from resource"/>
+        <Image HeightRequest="200" WidthRequest="200"  x:Name="_photo"/>
+      </StackLayout>
+     <StackLayout Orientation="Horizontal">
+        <Label Text="Using ImageFromFileExtension"/>
+        <Image HeightRequest="200" WidthRequest="200" 
+               Source="{ext:ImageFromFileExtension Assets\\ModernUserInterface256.jpg}"/>
+      </StackLayout>
     </StackLayout>
-    <StackLayout Orientation="Horizontal">
-      <Label Text="Image from web URL from XAML with caching and aspect fill"/>
-      <Image HeightRequest="200" Aspect="Fill">
-        <Image.Source>
-          <UriImageSource Uri="http://developer.xamarin.com/demo/IMG_1415.JPG"/>
-        </Image.Source>
-      </Image>
-    </StackLayout>
-    <StackLayout Orientation="Horizontal">
-      <Label Text="Image from resource"/>
-      <Image x:Name="_photo" />
-    </StackLayout>
-  </StackLayout>
+  </ScrollView>
 </ContentPage>
