@@ -149,6 +149,7 @@ class MonoPackageManager_Resources {
 		"MainApp.UI.Common.Views.dll",
 		"XLabs.Forms.dll",
 		"XLabs.Serialization.dll",
+		"Xamarin.FormsBook.Toolkit.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

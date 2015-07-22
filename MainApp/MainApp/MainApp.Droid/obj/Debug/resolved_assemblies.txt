@@ -80,3 +80,4 @@ E:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\SQLiteNetExte
 E:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\MainApp.UI.Common.Views.dll
 E:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\XLabs.Forms.dll
 E:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\XLabs.Serialization.dll
+E:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\Xamarin.FormsBook.Toolkit.dll

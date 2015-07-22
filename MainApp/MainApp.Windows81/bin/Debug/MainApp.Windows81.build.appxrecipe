@@ -103,6 +103,9 @@
     <AppxPackagedFile Include="E:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp\bin\Debug\XLabs.Forms.dll">
       <PackagePath>XLabs.Forms.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp\bin\Debug\Xamarin.FormsBook.Toolkit.dll">
+      <PackagePath>Xamarin.FormsBook.Toolkit.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp\bin\Debug\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
@@ -118,6 +121,10 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\Assets\StoreLogo.scale-100.png">
@@ -144,9 +151,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\MainApp.Windows81.xr.xml">
       <PackagePath>MainApp.Windows81.xr.xml</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\bin\Debug\Xamarin.FormsBook.Toolkit.dll">
-      <PackagePath>Xamarin.FormsBook.Toolkit.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\GitHub\XamarinMyExample\MainApp\packages\Xamarin.Forms.Windows.1.4.2.6355\lib\win81\Xamarin.Forms.Platform.WinRT\FormsTextBox.xbf">
       <PackagePath>Xamarin.Forms.Platform.WinRT\FormsTextBox.xbf</PackagePath>

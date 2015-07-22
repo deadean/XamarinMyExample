@@ -1,6 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="e:\github\xamarin\xamarinbook\myexample\mainapp\mainapp.windows81\obj\debug\intermediatexaml\mainapp.windows81.exe" HashGuid="46be328d-b5aa-a891-0634-8ae2c262a35a" />
+    <LocalAssembly PathName="e:\github\xamarinmyexample\mainapp\mainapp.windows81\obj\debug\intermediatexaml\mainapp.windows81.exe" HashGuid="46be328d-b5aa-a891-0634-8ae2c262a35a" />
     <ReferenceAssembly PathName="e:\github\xamarinmyexample\mainapp\packages\portable.mvvmlightlibs.5.0.2.0\lib\netcore451\galasoft.mvvmlight.dll" HashGuid="da07be64-1093-25cd-c992-377d44b6dd02" />
     <ReferenceAssembly PathName="e:\github\xamarinmyexample\mainapp\packages\portable.mvvmlightlibs.5.0.2.0\lib\netcore451\galasoft.mvvmlight.extras.dll" HashGuid="28bb2089-c7a4-73bb-7a72-1ea8b02698b0" />
     <ReferenceAssembly PathName="e:\github\xamarinmyexample\mainapp\packages\portable.mvvmlightlibs.5.0.2.0\lib\netcore451\galasoft.mvvmlight.platform.dll" HashGuid="54c1f1ed-b921-337f-8ad6-f2d8c553df06" />

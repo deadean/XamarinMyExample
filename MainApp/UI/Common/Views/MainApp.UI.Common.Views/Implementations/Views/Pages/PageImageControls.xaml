@@ -21,10 +21,23 @@
         <Label Text="Image from resource"/>
         <Image HeightRequest="200" WidthRequest="200"  x:Name="_photo"/>
       </StackLayout>
-     <StackLayout Orientation="Horizontal">
-        <Label Text="Using ImageFromFileExtension"/>
-        <Image HeightRequest="200" WidthRequest="200" 
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Using ImageFromFileExtension only for WinRT"/>
+        <Image HeightRequest="200" WidthRequest="200"
                Source="{ext:ImageFromFileExtension Assets\\ModernUserInterface256.jpg}"/>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Using ImageFromFileExtension only for Android"/>
+        <Image HeightRequest="200" WidthRequest="200"
+               Source="{ext:ImageFromFileExtension icon.png}"/>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Image from Stream"/>
+        <Image HeightRequest="200" WidthRequest="200" x:Name="img2"/>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Generate imageStream in RunTime"/>
+        <Image Aspect="Fill" x:Name="img3"/>
       </StackLayout>
     </StackLayout>
   </ScrollView>

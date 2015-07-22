@@ -12,5 +12,6 @@ E:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\bin\Debug\Xamarin.F
 E:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\bin\Debug\Xamarin.Forms.Xaml.dll
 E:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\bin\Debug\Xamarin.Forms.Core.xml
 E:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\bin\Debug\Xamarin.Forms.Xaml.xml
+E:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\obj\Debug\MainProject.Common.csprojResolveAssemblyReference.cache
 E:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\obj\Debug\MainProject.Common.dll
 E:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\obj\Debug\MainProject.Common.pdb

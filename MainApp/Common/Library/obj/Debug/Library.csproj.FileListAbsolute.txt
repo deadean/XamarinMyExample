@@ -27,6 +27,5 @@ E:\GitHub\XamarinMyExample\MainApp\Common\Library\bin\Debug\GalaSoft.MvvmLight.E
 E:\GitHub\XamarinMyExample\MainApp\Common\Library\bin\Debug\GalaSoft.MvvmLight.Extras.xml
 E:\GitHub\XamarinMyExample\MainApp\Common\Library\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 E:\GitHub\XamarinMyExample\MainApp\Common\Library\bin\Debug\Microsoft.Practices.ServiceLocation.xml
-E:\GitHub\XamarinMyExample\MainApp\Common\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
 E:\GitHub\XamarinMyExample\MainApp\Common\Library\obj\Debug\Library.dll
 E:\GitHub\XamarinMyExample\MainApp\Common\Library\obj\Debug\Library.pdb

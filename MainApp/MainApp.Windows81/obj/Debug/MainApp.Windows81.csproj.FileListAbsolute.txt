@@ -143,6 +143,7 @@ E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\XLabs.Ioc.dll
 E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\SQLite.Net.Async.dll
 E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\SQLiteNetExtensionsAsync.dll
 E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\XLabs.Forms.dll
+E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\Xamarin.FormsBook.Toolkit.dll
 E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\Newtonsoft.Json.dll
 E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\XLabs.Core.dll
 E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\XLabs.Serialization.dll
@@ -173,6 +174,7 @@ E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\Library.pdb
 E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\XLabs.Platform.xml
 E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\XLabs.Ioc.xml
 E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\XLabs.Forms.xml
+E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\Xamarin.FormsBook.Toolkit.pdb
 E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\Newtonsoft.Json.xml
 E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\XLabs.Core.xml
 E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\XLabs.Serialization.xml
