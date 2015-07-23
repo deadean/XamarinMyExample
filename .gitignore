@@ -6,3 +6,6 @@
 *.cache
 *.pdb
 *.pdb
+*.cache
+*.dll
+*.exe

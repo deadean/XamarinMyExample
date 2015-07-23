@@ -51,6 +51,7 @@
     <Compile Include="Implementations\Messages\OnNavigatedFromMessage.cs" />
     <Compile Include="Implementations\ViewModels\Controls\PageCustomControlsVm.cs" />
     <Compile Include="Implementations\ViewModels\Controls\PageImageControlsVm.cs" />
+    <Compile Include="Implementations\ViewModels\Controls\PageToolBarsVm.cs" />
     <Compile Include="Implementations\ViewModels\MainPage\MainPageVm.cs" />
     <Compile Include="Implementations\ViewModels\MainPage\MenuItemVm.cs" />
     <Compile Include="Implementations\ViewModels\MainPage\TabItemControlsVm.cs" />

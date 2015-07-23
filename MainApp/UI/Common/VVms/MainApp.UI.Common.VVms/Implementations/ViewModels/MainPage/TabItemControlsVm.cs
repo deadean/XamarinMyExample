@@ -25,6 +25,7 @@ namespace MainApp.UI.Common.VVms.Implementations.ViewModels.MainPage
 		{
 			Menus.Add(new MenuItemVm("Working with Images", new AsyncCommand(OnImageClick)));
 			Menus.Add(new MenuItemVm("CustomControls", new AsyncCommand(OnCustomControlsClick)));
+			Menus.Add(new MenuItemVm("ToolBars", new AsyncCommand(OnToolBarsClick)));
 		}
 		
 
@@ -44,6 +45,11 @@ namespace MainApp.UI.Common.VVms.Implementations.ViewModels.MainPage
 		private Task OnCustomControlsClick()
 		{
 			return this.modNavigationService.NavigateAsync<TabItemControlsVm, PageCustomControlsVm>(this);
+		}
+
+		private Task OnToolBarsClick()
+		{
+			return this.modNavigationService.NavigateAsync<TabItemControlsVm, PageToolBarsVm>(this);
 		}
 
 		#endregion

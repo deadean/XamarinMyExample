@@ -109,7 +109,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
+    <Content Include="Resources\drawable\edit.png" />
+    <Content Include="Resources\drawable\feature.search.png" />
     <Content Include="Resources\drawable\ModernUserInterface256.jpg" />
+    <Content Include="Resources\drawable\refresh.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Services\MainApp.Services\MainApp.Services.csproj">
