@@ -9,3 +9,9 @@
 *.cache
 *.dll
 *.exe
+*.dll
+MainApp/MainApp.Windows81/bin/Debug/AppX/MainApp.dll
+*.exe
+MainApp/MainApp.Windows81/bin/Debug/MainApp.dll
+*.pdb
+*.cache

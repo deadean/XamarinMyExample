@@ -6,15 +6,15 @@
     <ToolbarItem Text="edit" x:Name="toolbar1"
                  Order="Primary"
                  Clicked="OnToolbarItemClicked">
-      <!--<ToolbarItem.Icon>
+      <ToolbarItem.Icon>
         <OnPlatform x:TypeArguments="FileImageSource"
                     iOS="edit.png"
                     Android="edit.png"
                     WinPhone="Images/edit.png" />
-      </ToolbarItem.Icon>-->
+      </ToolbarItem.Icon>
     </ToolbarItem>
 
-    <!--<ToolbarItem Text="search" x:Name="toolbar2"
+    <ToolbarItem Text="search" x:Name="toolbar2"
                  Order="Primary"
                  Clicked="OnToolbarItemClicked">
       <ToolbarItem.Icon>
@@ -46,7 +46,7 @@
 
     <ToolbarItem Text="evolve"
                  Order="Secondary"
-                 Clicked="OnToolbarItemClicked" />-->
+                 Clicked="OnToolbarItemClicked" />
   </ContentPage.ToolbarItems>
   <Label x:Name="label"
            FontSize="Large"
