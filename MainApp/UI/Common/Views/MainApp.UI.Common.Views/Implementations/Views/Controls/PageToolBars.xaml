@@ -13,6 +13,8 @@
                     WinPhone="Images/edit.png" />
       </ToolbarItem.Icon>
     </ToolbarItem>
+    
+    
 
     <ToolbarItem Text="search" x:Name="toolbar2"
                  Order="Primary"
