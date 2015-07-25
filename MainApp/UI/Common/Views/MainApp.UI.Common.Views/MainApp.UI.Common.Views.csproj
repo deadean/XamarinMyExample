@@ -57,6 +57,12 @@
     <Compile Include="Implementations\Views\Controls\CustomControls.xaml.cs">
       <DependentUpon>CustomControls.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Implementations\Views\Controls\PageAbsoluteLayout.xaml.cs">
+      <DependentUpon>PageAbsoluteLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Implementations\Views\Controls\PageButtons.xaml.cs">
+      <DependentUpon>PageButtons.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Implementations\Views\Controls\PageToolBars.xaml.cs">
       <DependentUpon>PageToolBars.xaml</DependentUpon>
     </Compile>
@@ -245,6 +251,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Implementations\Views\Controls\PageToolBars.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Implementations\Views\Controls\PageButtons.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Implementations\Views\Controls\PageAbsoluteLayout.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

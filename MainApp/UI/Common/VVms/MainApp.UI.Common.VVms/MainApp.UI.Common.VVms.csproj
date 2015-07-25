@@ -49,6 +49,8 @@
     <Compile Include="Implementations\DependencyBlock\MainPageDependencyBlock.cs" />
     <Compile Include="Implementations\LocatorStrategies\MainPageLocatorStrategy.cs" />
     <Compile Include="Implementations\Messages\OnNavigatedFromMessage.cs" />
+    <Compile Include="Implementations\ViewModels\Controls\PageAbsoluteLayoutVm.cs" />
+    <Compile Include="Implementations\ViewModels\Controls\PageButtonsVm.cs" />
     <Compile Include="Implementations\ViewModels\Controls\PageCustomControlsVm.cs" />
     <Compile Include="Implementations\ViewModels\Controls\PageImageControlsVm.cs" />
     <Compile Include="Implementations\ViewModels\Controls\PageToolBarsVm.cs" />
