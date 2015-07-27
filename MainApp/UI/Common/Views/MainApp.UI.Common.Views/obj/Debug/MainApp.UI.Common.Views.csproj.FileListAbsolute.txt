@@ -127,3 +127,6 @@ E:\GitHub\XamarinMyExample\MainApp\UI\Common\Views\MainApp.UI.Common.Views\obj\D
 E:\GitHub\XamarinMyExample\MainApp\UI\Common\Views\MainApp.UI.Common.Views\obj\Debug\MainApp.UI.Common.Views.dll
 E:\GitHub\XamarinMyExample\MainApp\UI\Common\Views\MainApp.UI.Common.Views\obj\Debug\MainApp.UI.Common.Views.pdb
 E:\GitHub\XamarinMyExample\MainApp\UI\Common\Views\MainApp.UI.Common.Views\obj\Debug\PageToolBars.xaml.g.cs
+E:\GitHub\XamarinMyExample\MainApp\UI\Common\Views\MainApp.UI.Common.Views\obj\Debug\PageButtons.xaml.g.cs
+E:\GitHub\XamarinMyExample\MainApp\UI\Common\Views\MainApp.UI.Common.Views\obj\Debug\PageAbsoluteLayout.xaml.g.cs
+E:\GitHub\XamarinMyExample\MainApp\UI\Common\Views\MainApp.UI.Common.Views\obj\Debug\StandartControls.xaml.g.cs

@@ -17,3 +17,4 @@ E:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.Form
 E:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\bin\Debug\Xamarin.Forms.Xaml.xml
 E:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\obj\Debug\Xamarin.FormsBook.Toolkit.dll
 E:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\obj\Debug\Xamarin.FormsBook.Toolkit.pdb
+E:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\obj\Debug\Xamarin.FormsBook.Toolkit.csprojResolveAssemblyReference.cache

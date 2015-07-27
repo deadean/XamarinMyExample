@@ -82,7 +82,6 @@ E:\GitHub\Xamarin\XamarinBook\MyExample\MainApp\MainApp\MainApp.Droid\obj\Debug\
 E:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\MainApp.Droid.dll.config
 E:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\MainApp.Droid.dll
 E:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\MainApp.Droid.pdb
-E:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\MainApp.Droid.dll.mdb
 E:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\MainApp.Droid.apk
 E:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\MainApp.Droid-Signed.apk
 E:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp.Droid\bin\Debug\ExifLib.dll

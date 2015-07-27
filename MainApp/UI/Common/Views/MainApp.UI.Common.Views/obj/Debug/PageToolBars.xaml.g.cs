@@ -18,11 +18,17 @@ namespace MainApp.UI.Common.Views.Implementations.Views.Controls {
         
         private ToolbarItem toolbar1;
         
+        private ToolbarItem toolbar2;
+        
+        private ToolbarItem toolbar3;
+        
         private Label label;
         
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(PageToolBars));
             toolbar1 = this.FindByName<ToolbarItem>("toolbar1");
+            toolbar2 = this.FindByName<ToolbarItem>("toolbar2");
+            toolbar3 = this.FindByName<ToolbarItem>("toolbar3");
             label = this.FindByName<Label>("label");
         }
     }
