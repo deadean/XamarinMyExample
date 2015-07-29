@@ -45,7 +45,7 @@ namespace App1.Droid
 			{
 				// if it's not recycled, initialize some attributes
 				imageView = new ImageView(context);
-				imageView.LayoutParameters = new AbsListView.LayoutParams(85, 85);
+				imageView.LayoutParameters = new AbsListView.LayoutParams(300, 300);
 				imageView.SetScaleType(ImageView.ScaleType.CenterCrop);
 				imageView.SetPadding(8, 8, 8, 8);
 			}

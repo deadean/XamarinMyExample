@@ -2,7 +2,7 @@ package md50170a25da682dd459b9251c65ebe3a7a;
 
 
 public class Page1Render
-	extends md5d4dd78677dce656d5db26c85a3743ef3.ViewRenderer_2
+	extends md5530bd51e982e6e7b340b73e88efe666e.ViewRenderer_2
 	implements
 		mono.android.IGCUserPeer
 {

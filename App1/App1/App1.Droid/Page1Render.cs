@@ -14,7 +14,7 @@ using Xamarin.Forms;
 using App1.Droid;
 using App1;
 
-[assembly: ExportRenderer(typeof(View1), typeof(GridView))]
+[assembly: ExportRenderer(typeof(View1), typeof(Page1Render))]
 
 namespace App1.Droid
 {
@@ -30,29 +30,16 @@ namespace App1.Droid
 			if (e.OldElement != null || this.Element == null)
 				return;
 
+			GridView grd = (GridView)LayoutInflater.From(Forms.Context).Inflate(Resource.Layout.layout1, null, false);
 
-			GridView grd = new GridView(Forms.Context);
-			grd.SetColumnWidth(100);
-			grd.StretchMode = StretchMode.StretchColumnWidth;
-			grd.SetGravity(GravityFlags.Center);
+			//GridView grd = new GridView(Forms.Context);
+			//grd.SetColumnWidth(100);
+			//grd.StretchMode = StretchMode.StretchColumnWidth;
+			//grd.SetGravity(GravityFlags.Center);
 			grd.Adapter = new ImageAdapter(Forms.Context);
 			grd.ItemClick += (sender, args) => Toast.MakeText(this.Context, args.Position.ToString(), ToastLength.Short).Show();
 
 			SetNativeControl(grd);
 		}
-
-		//protected override void OnElementChanged(ElementChangedEventArgs<Page> e)
-		//{
-		//	base.OnElementChanged(e);
-
-		//	GridView grd = new GridView(this.Context);
-		//	grd.SetColumnWidth(100);
-		//	grd.StretchMode = StretchMode.StretchColumnWidth;
-		//	grd.SetGravity(GravityFlags.Center);
-		//	grd.Adapter = new ImageAdapter(this.Context);
-		//	grd.ItemClick += (sender, args) => Toast.MakeText(this.Context, args.Position.ToString(), ToastLength.Short).Show();
-
-		//	this.AddView(grd, ViewGroup.LayoutParams.FillParent);
-		//}
 	}
 }

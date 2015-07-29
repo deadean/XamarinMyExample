@@ -15,12 +15,16 @@ public final class R {
         public static int monoandroidsplash=0x7f020001;
     }
     public static final class id {
-        public static int gridview=0x7f050000;
+        public static int gridview=0x7f060000;
     }
     public static final class layout {
         public static int layout1=0x7f030000;
     }
+    public static final class string {
+        public static int ApplicationName=0x7f040001;
+        public static int Hello=0x7f040000;
+    }
     public static final class style {
-        public static int Mono_Android_Theme_Splash=0x7f040000;
+        public static int Mono_Android_Theme_Splash=0x7f050000;
     }
 }
