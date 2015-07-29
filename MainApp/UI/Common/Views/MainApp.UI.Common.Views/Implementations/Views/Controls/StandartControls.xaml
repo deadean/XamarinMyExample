@@ -50,7 +50,14 @@
         <Switch x:Name="switch" />
       </StackLayout>
       <StackLayout Orientation="Horizontal">
-        <Label />
+        <Label Text="Entry and Keyboards"/>
+        <Entry Placeholder="Default" Keyboard="Default"/>
+        <Entry Placeholder="Chat" Keyboard="Chat"/>
+        <Entry Placeholder="Email" Keyboard="Email"/>
+        <Entry Placeholder="Numeric" Keyboard="Numeric"/>
+        <Entry Placeholder="Telephone" Keyboard="Telephone"/>
+        <Entry Placeholder="Text" Keyboard="Text"/>
+        <Entry Placeholder="Url" Keyboard="Url"/>
       </StackLayout>
       <StackLayout Orientation="Horizontal">
         <Label />

@@ -210,11 +210,3 @@ E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\obj\Debug\GalaSoft.MvvmLigh
 E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\obj\Debug\Xamarin.Forms.Platform.WinRT.pri.xml
 E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\obj\Debug\Xamarin.Forms.Platform.WinRT.Tablet.pri.xml
 E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\obj\Debug\ProjectArchitectures.txt
-E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\obj\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles
-E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\obj\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles.intermediate
-E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\obj\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles
-E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\obj\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles.intermediate
-E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\obj\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles
-E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\obj\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles.intermediate
-E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\obj\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml
-E:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\obj\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml.intermediate
