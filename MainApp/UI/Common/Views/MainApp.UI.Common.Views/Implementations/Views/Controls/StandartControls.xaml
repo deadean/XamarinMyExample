@@ -39,11 +39,15 @@
           <Slider ValueChanged="OnSliderValueChanged" />
         </StackLayout>
       </StackLayout>
-      <StackLayout Orientation="Horizontal">
-        <Label />
+      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+        <Label Text="Stepper"/>
+        <Label Text="{Binding Value, StringFormat='Stepper value:{0}'}" BindingContext="{x:Reference stepper}"/>
+        <Stepper Maximum="10" x:Name="stepper"/>
       </StackLayout>
-      <StackLayout Orientation="Horizontal">
-        <Label />
+      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+        <Label Text="Switch"/>
+        <Label Text="{Binding IsToggled, StringFormat='Switch IsToggled value:{0}'}" BindingContext="{x:Reference switch}"/>
+        <Switch x:Name="switch" />
       </StackLayout>
       <StackLayout Orientation="Horizontal">
         <Label />

@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:labels="clr-namespace:MainApp.UI.Common.Views.Controls.Implementations.Labels;assembly=MainApp.UI.Common.Views"
+             xmlns:checkboxes="clr-namespace:MainApp.UI.Common.Views.Controls.Implementations.CheckBoxes;assembly=MainApp.UI.Common.Views"
              x:Class="MainApp.UI.Common.Views.Implementations.Views.Controls.CustomControls">
   <StackLayout>
     <StackLayout Orientation="Horizontal">
@@ -21,6 +22,11 @@
         <labels:AltLabel Text="Text of 11 points" PointSize="11" />
         <labels:AltLabel Text="Text of 12 points" PointSize="12" />
       </StackLayout>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="CustomCheckBox"/>
+      <Switch x:Name="switch"/>
+      <checkboxes:CustomCheckBox Text="Hello" IsChecked="{Binding IsToggled, Mode=TwoWay}" BindingContext="{x:Reference switch}"/>
     </StackLayout>
   </StackLayout>
 </ContentPage>

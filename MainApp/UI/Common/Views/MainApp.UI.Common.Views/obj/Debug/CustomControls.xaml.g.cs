@@ -18,9 +18,12 @@ namespace MainApp.UI.Common.Views.Implementations.Views.Controls {
         
         private global::MainApp.UI.Common.Views.Controls.Implementations.Labels.AltLabel Label1;
         
+        private Switch @switch;
+        
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(CustomControls));
             Label1 = this.FindByName<global::MainApp.UI.Common.Views.Controls.Implementations.Labels.AltLabel>("Label1");
+            @switch = this.FindByName<Switch>("switch");
         }
     }
 }

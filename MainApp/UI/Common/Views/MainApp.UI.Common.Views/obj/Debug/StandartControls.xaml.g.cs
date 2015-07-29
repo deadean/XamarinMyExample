@@ -30,6 +30,10 @@ namespace MainApp.UI.Common.Views.Implementations.Views.Controls {
         
         private Label label2;
         
+        private Stepper stepper;
+        
+        private Switch @switch;
+        
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(StandartControls));
             slider = this.FindByName<Slider>("slider");
@@ -39,6 +43,8 @@ namespace MainApp.UI.Common.Views.Implementations.Views.Controls {
             boxview = this.FindByName<BoxView>("boxview");
             label1 = this.FindByName<Label>("label1");
             label2 = this.FindByName<Label>("label2");
+            stepper = this.FindByName<Stepper>("stepper");
+            @switch = this.FindByName<Switch>("switch");
         }
     }
 }
