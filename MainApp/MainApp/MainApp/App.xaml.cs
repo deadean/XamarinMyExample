@@ -234,6 +234,8 @@ namespace MainApp
 		protected override void OnSleep()
 		{
 			// Handle when your app sleeps
+			// Should be used here to save data from application
+			// Application.Current.Properties; 
 		}
 
 		protected override void OnResume()

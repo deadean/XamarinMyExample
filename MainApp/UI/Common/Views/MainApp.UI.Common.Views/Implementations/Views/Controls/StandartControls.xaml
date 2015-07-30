@@ -59,6 +59,22 @@
         <Entry Placeholder="Text" Keyboard="Text"/>
         <Entry Placeholder="Url" Keyboard="Url"/>
       </StackLayout>
+      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+        <Label Text="SearchBar"/>
+        <StackLayout>
+          <SearchBar Placeholder="Search text"
+                     SearchCommand="{Binding SearchCommand}"
+                     Text="{Binding SearchText}"
+                   />
+          <ListView ItemsSource="{Binding SearchResults}">
+            <ListView.ItemTemplate>
+              <DataTemplate>
+                <TextCell Text="{Binding Value}"/>
+              </DataTemplate>
+            </ListView.ItemTemplate>
+          </ListView>
+        </StackLayout>
+      </StackLayout>
       <StackLayout Orientation="Horizontal">
         <Label />
       </StackLayout>

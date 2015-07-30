@@ -29,7 +29,7 @@ namespace MainApp.UI.Common.VVms.Implementations.ViewModels.MainPage
 			Menus.Add(new MenuItemVm("Buttons", new AsyncCommand(OnButtonsClick)));
 			Menus.Add(new MenuItemVm("Absolute Layout"
 				, new AsyncCommand(async () => this.modNavigationService.NavigateAsync<TabItemControlsVm, PageAbsoluteLayoutVm>(this))));
-			Menus.Add(new MenuItemVm("Slider/Stepper/Switch/Checkbox"
+			Menus.Add(new MenuItemVm("Slider/Stepper/Switch/Checkbox/Editor/SearchBar"
 				, new AsyncCommand(async () => this.modNavigationService.NavigateAsync<TabItemControlsVm, StandartControlsVm>(this))));
 		}
 		
