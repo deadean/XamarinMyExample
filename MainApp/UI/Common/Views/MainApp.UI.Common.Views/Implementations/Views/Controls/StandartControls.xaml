@@ -2,82 +2,90 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MainApp.UI.Common.Views.Implementations.Views.Controls.StandartControls">
-  <ScrollView>
-    <StackLayout HorizontalOptions="FillAndExpand">
-      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-        <Label Text="Slider"/>
-        <StackLayout Padding="10, 0" HorizontalOptions="FillAndExpand">
-          <Slider VerticalOptions="CenterAndExpand" x:Name="slider" Minimum="0" Maximum="1000"/>
-          <Label Text="{Binding Value, StringFormat='Slider value:{0}'}"
+	<ScrollView>
+		<StackLayout HorizontalOptions="FillAndExpand">
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<Label Text="Slider"/>
+				<StackLayout Padding="10, 0" HorizontalOptions="FillAndExpand">
+					<Slider VerticalOptions="CenterAndExpand" x:Name="slider" Minimum="0" Maximum="1000"/>
+					<Label Text="{Binding Value, StringFormat='Slider value:{0}'}"
                  BindingContext="{x:Reference slider}"
                  HorizontalOptions="Center"/>
-        </StackLayout>
-      </StackLayout>
-      <StackLayout Orientation="Horizontal">
-        <Label Text="Color changing"/>
-        <StackLayout Padding="10, 0" HorizontalOptions="FillAndExpand">
-          <Slider VerticalOptions="CenterAndExpand" x:Name="slider1" Minimum="0" Maximum="255" ValueChanged="ValueChanged"/>
-          <Slider VerticalOptions="CenterAndExpand" x:Name="slider2" Minimum="0" Maximum="255" ValueChanged="ValueChanged"/>
-          <Slider VerticalOptions="CenterAndExpand" x:Name="slider3" Minimum="0" Maximum="255" ValueChanged="ValueChanged"/>
-          <BoxView x:Name="boxview"/>
-        </StackLayout>
-      </StackLayout>
-      <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
-        <Label Text="Slider"/>
-        <StackLayout HorizontalOptions="FillAndExpand">
-          <AbsoluteLayout VerticalOptions="CenterAndExpand">
-            <Label x:Name="label1"
+				</StackLayout>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Color changing"/>
+				<StackLayout Padding="10, 0" HorizontalOptions="FillAndExpand">
+					<Slider VerticalOptions="CenterAndExpand" x:Name="slider1" Minimum="0" Maximum="255" ValueChanged="ValueChanged"/>
+					<Slider VerticalOptions="CenterAndExpand" x:Name="slider2" Minimum="0" Maximum="255" ValueChanged="ValueChanged"/>
+					<Slider VerticalOptions="CenterAndExpand" x:Name="slider3" Minimum="0" Maximum="255" ValueChanged="ValueChanged"/>
+					<BoxView x:Name="boxview"/>
+				</StackLayout>
+			</StackLayout>
+			<StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+				<Label Text="Slider"/>
+				<StackLayout HorizontalOptions="FillAndExpand">
+					<AbsoluteLayout VerticalOptions="CenterAndExpand">
+						<Label x:Name="label1"
                    Text="TEXT"
                    AbsoluteLayout.LayoutBounds="0, 0.5"
                    AbsoluteLayout.LayoutFlags="PositionProportional" />
-            <Label x:Name="label2"
+						<Label x:Name="label2"
                    Text="FADE"
                    Opacity="0"
                    AbsoluteLayout.LayoutBounds="0, 0.5"
                    AbsoluteLayout.LayoutFlags="PositionProportional" />
-          </AbsoluteLayout>
-          <Slider ValueChanged="OnSliderValueChanged" />
-        </StackLayout>
-      </StackLayout>
-      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-        <Label Text="Stepper"/>
-        <Label Text="{Binding Value, StringFormat='Stepper value:{0}'}" BindingContext="{x:Reference stepper}"/>
-        <Stepper Maximum="10" x:Name="stepper"/>
-      </StackLayout>
-      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-        <Label Text="Switch"/>
-        <Label Text="{Binding IsToggled, StringFormat='Switch IsToggled value:{0}'}" BindingContext="{x:Reference switch}"/>
-        <Switch x:Name="switch" />
-      </StackLayout>
-      <StackLayout Orientation="Horizontal">
-        <Label Text="Entry and Keyboards"/>
-        <Entry Placeholder="Default" Keyboard="Default"/>
-        <Entry Placeholder="Chat" Keyboard="Chat"/>
-        <Entry Placeholder="Email" Keyboard="Email"/>
-        <Entry Placeholder="Numeric" Keyboard="Numeric"/>
-        <Entry Placeholder="Telephone" Keyboard="Telephone"/>
-        <Entry Placeholder="Text" Keyboard="Text"/>
-        <Entry Placeholder="Url" Keyboard="Url"/>
-      </StackLayout>
-      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-        <Label Text="SearchBar"/>
-        <StackLayout>
-          <SearchBar Placeholder="Search text"
+					</AbsoluteLayout>
+					<Slider ValueChanged="OnSliderValueChanged" />
+				</StackLayout>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<Label Text="Stepper"/>
+				<Label Text="{Binding Value, StringFormat='Stepper value:{0}'}" BindingContext="{x:Reference stepper}"/>
+				<Stepper Maximum="10" x:Name="stepper"/>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<Label Text="Switch"/>
+				<Label Text="{Binding IsToggled, StringFormat='Switch IsToggled value:{0}'}" BindingContext="{x:Reference switch}"/>
+				<Switch x:Name="switch" />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label Text="Entry and Keyboards"/>
+				<Entry Placeholder="Default" Keyboard="Default"/>
+				<Entry Placeholder="Chat" Keyboard="Chat"/>
+				<Entry Placeholder="Email" Keyboard="Email"/>
+				<Entry Placeholder="Numeric" Keyboard="Numeric"/>
+				<Entry Placeholder="Telephone" Keyboard="Telephone"/>
+				<Entry Placeholder="Text" Keyboard="Text"/>
+				<Entry Placeholder="Url" Keyboard="Url"/>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label Text="DateTimePicker"/>
+				<DatePicker Format="D"/>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label Text="TimePicker"/>
+				<TimePicker />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Label />
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<Label Text="SearchBar"/>
+				<StackLayout>
+					<SearchBar Placeholder="Search text"
                      SearchCommand="{Binding SearchCommand}"
                      Text="{Binding SearchText}"
                    />
-          <ListView ItemsSource="{Binding SearchResults}">
-            <ListView.ItemTemplate>
-              <DataTemplate>
-                <TextCell Text="{Binding Value}"/>
-              </DataTemplate>
-            </ListView.ItemTemplate>
-          </ListView>
-        </StackLayout>
-      </StackLayout>
-      <StackLayout Orientation="Horizontal">
-        <Label />
-      </StackLayout>
-    </StackLayout>
-  </ScrollView>
+					<ListView ItemsSource="{Binding SearchResults}">
+						<ListView.ItemTemplate>
+							<DataTemplate>
+								<TextCell Text="{Binding Value}"/>
+							</DataTemplate>
+						</ListView.ItemTemplate>
+					</ListView>
+				</StackLayout>
+			</StackLayout>
+		</StackLayout>
+	</ScrollView>
 </ContentPage>
