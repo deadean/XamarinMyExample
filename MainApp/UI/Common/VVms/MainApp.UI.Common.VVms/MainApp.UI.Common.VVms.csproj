@@ -75,6 +75,7 @@
     <Compile Include="Implementations\ViewModels\Pages\Preferences\TextPreferenceVM.cs" />
     <Compile Include="Implementations\ViewModels\Pages\SaveCommentsPageVm.cs" />
     <Compile Include="Implementations\ViewModels\Services\PageIPlatformInfoVm.cs" />
+    <Compile Include="Implementations\ViewModels\Xamarin1\PageDataBindingVm.cs" />
     <Compile Include="Implementations\ViewModels\Xamarin1\PageDeviceStartTimerVm.cs" />
     <Compile Include="Implementations\ViewModels\Xamarin1\TapGestureRecognizerVm.cs" />
     <Compile Include="Implementations\ViewModels\XAML\PageDeviceOnPlatformInXamlClickVm.cs" />

@@ -84,6 +84,9 @@
     <Compile Include="Implementations\Views\Services\PageIPlatformInfo.xaml.cs">
       <DependentUpon>PageIPlatformInfo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Implementations\Views\Xamarin1\PageDataBinding.xaml.cs">
+      <DependentUpon>PageDataBinding.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Implementations\Views\Xamarin1\PageDeviceStartTimer.xaml.cs">
       <DependentUpon>PageDeviceStartTimer.xaml</DependentUpon>
     </Compile>
@@ -281,6 +284,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Controls\Implementations\CheckBoxes\CustomCheckBox.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Implementations\Views\Xamarin1\PageDataBinding.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

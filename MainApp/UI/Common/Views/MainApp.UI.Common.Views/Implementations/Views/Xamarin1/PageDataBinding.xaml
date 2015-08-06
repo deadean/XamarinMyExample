@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MainApp.UI.Common.Views.Implementations.Views.Xamarin1.PageDataBinding">
+	<ScrollView>
+		<StackLayout HorizontalOptions="FillAndExpand">
+			
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<Label Text="DataBinding in code"/>
+				<Label x:Name="label1" Text="Text ..."/>
+				<Slider x:Name="slider1" HorizontalOptions="FillAndExpand"/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<Label Text="DataBinding in code without BindingContext"/>
+				<Label x:Name="label2" Text="Text ..."/>
+				<Slider x:Name="slider2" HorizontalOptions="FillAndExpand"/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<Label Text="DataBinding without BindingContext"/>
+				<Label x:Name="label3" Text="Text ..."  
+							 Opacity="{Binding Source={x:Reference Name=slider3}, Path=Value}" />
+				<Slider x:Name="slider3" HorizontalOptions="FillAndExpand"/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<Label Text="DataBinding with BindingContext as Value of slider"/>
+				<Label x:Name="label4" Text="Text ..."
+							 Opacity="{Binding}"
+							 BindingContext="{Binding Source={x:Reference Name=slider4}, Path=Value}" />
+				<Slider x:Name="slider4" HorizontalOptions="FillAndExpand"/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<Label Text=""/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<Label Text=""/>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<Label Text=""/>
+			</StackLayout>
+			
+		</StackLayout>
+	</ScrollView>
+</ContentPage>

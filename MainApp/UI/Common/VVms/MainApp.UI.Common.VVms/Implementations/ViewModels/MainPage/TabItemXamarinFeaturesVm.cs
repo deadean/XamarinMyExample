@@ -26,6 +26,8 @@ namespace MainApp.UI.Common.VVms.Implementations.ViewModels.MainPage
 		{
 			Menus.Add(new MenuItemVm("Device.StartTimer", new AsyncCommand(OnDeviceStartTimerClick)));
 			Menus.Add(new MenuItemVm("TapGestureRecognizer", new AsyncCommand(OnTapGestureRecognizerClick)));
+			Menus.Add(new MenuItemVm("DataBinding"
+				, new AsyncCommand(async () => await this.modNavigationService.NavigateAsync<TabItemXamarinFeaturesVm, PageDataBindingVm>(this))));
 		}
 
 		#endregion
