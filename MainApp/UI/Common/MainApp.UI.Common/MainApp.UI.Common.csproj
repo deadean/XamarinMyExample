@@ -47,6 +47,7 @@
     <Compile Include="Enums\File\enFileOperationResult.cs" />
     <Compile Include="Enums\File\enFileWorkerStartupLocation.cs" />
     <Compile Include="Extensions\FileExtensions.cs" />
+    <Compile Include="Implementations\Converters\IsEnableByTextLengthConverter.cs" />
     <Compile Include="Implementations\Navigation\LoadStateEventArgs.cs" />
     <Compile Include="Implementations\Navigation\NavigationArgs.cs" />
     <Compile Include="Implementations\Navigation\SaveStateEventArgs.cs" />
@@ -120,7 +121,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Bases\Pages\" />
-    <Folder Include="Implementations\Converters\" />
     <Folder Include="Interfaces\Converter\" />
   </ItemGroup>
   <ItemGroup>

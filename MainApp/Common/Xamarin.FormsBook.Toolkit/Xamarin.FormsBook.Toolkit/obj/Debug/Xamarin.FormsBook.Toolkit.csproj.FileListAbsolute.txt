@@ -18,3 +18,13 @@ E:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.Form
 E:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\obj\Debug\Xamarin.FormsBook.Toolkit.dll
 E:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\obj\Debug\Xamarin.FormsBook.Toolkit.pdb
 E:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\obj\Debug\Xamarin.FormsBook.Toolkit.csprojResolveAssemblyReference.cache
+D:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\bin\Debug\Xamarin.FormsBook.Toolkit.dll
+D:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\bin\Debug\Xamarin.FormsBook.Toolkit.pdb
+D:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\bin\Debug\Xamarin.Forms.Core.dll
+D:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\bin\Debug\Xamarin.Forms.Platform.dll
+D:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\bin\Debug\Xamarin.Forms.Core.xml
+D:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\obj\Debug\Xamarin.FormsBook.Toolkit.csprojResolveAssemblyReference.cache
+D:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\obj\Debug\Xamarin.FormsBook.Toolkit.dll
+D:\GitHub\XamarinMyExample\MainApp\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\obj\Debug\Xamarin.FormsBook.Toolkit.pdb

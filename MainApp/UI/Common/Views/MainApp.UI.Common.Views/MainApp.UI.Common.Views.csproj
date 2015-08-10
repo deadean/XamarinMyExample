@@ -158,6 +158,7 @@
     <Content Include="Implementations\Views\MainPage\ResourcesIcon\Synchronization.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Controls\Converters\" />
     <Folder Include="Implementations\Images\Xaml\" />
   </ItemGroup>
   <ItemGroup>

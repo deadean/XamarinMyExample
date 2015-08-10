@@ -14,3 +14,12 @@ E:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\bin\Debug\Xamarin.F
 E:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\bin\Debug\Xamarin.Forms.Xaml.xml
 E:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\obj\Debug\MainProject.Common.dll
 E:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\obj\Debug\MainProject.Common.pdb
+D:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\bin\Debug\MainProject.Common.dll
+D:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\bin\Debug\MainProject.Common.pdb
+D:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\bin\Debug\Xamarin.Forms.Core.dll
+D:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\bin\Debug\Xamarin.Forms.Core.xml
+D:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\obj\Debug\MainProject.Common.csprojResolveAssemblyReference.cache
+D:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\obj\Debug\MainProject.Common.dll
+D:\GitHub\XamarinMyExample\MainApp\Common\MainProject.Common\obj\Debug\MainProject.Common.pdb

@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ctr="clr-namespace:MainApp.UI.Common;assembly=MainApp.UI.Common"
              x:Class="MainApp.UI.Common.Views.Implementations.Views.Xamarin1.PageDataBinding">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <ctr:IsEnableByTextLengthConverter x:Key="IsEnableByTextLengthConverter" MaxLength="3" />
+    </ResourceDictionary>
+  </ContentPage.Resources>
 	<ScrollView>
 		<StackLayout HorizontalOptions="FillAndExpand">
 			
@@ -33,11 +39,15 @@
 			</StackLayout>
 
 			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-				<Label Text=""/>
+				<Label Text="Using ValueConverter. Type 1234"/>
+        <Entry x:Name="entry4" HorizontalOptions="FillAndExpand"/>
+        <Button Text="Hi" IsEnabled="{Binding Source={x:Reference entry4}, Path=Text, Converter={StaticResource IsEnableByTextLengthConverter}}"/>
 			</StackLayout>
 
 			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-				<Label Text=""/>
+        <Label Text="Using ValueConverter in vm. Type 123456"/>
+        <Entry HorizontalOptions="FillAndExpand" />
+        <Button Text="Hi" IsEnabled="{Binding InputText}"/>
 			</StackLayout>
 
 			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
