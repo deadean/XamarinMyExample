@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             SizeChanged="OnSizeChanged"
              x:Class="MainApp.UI.Common.Views.Implementations.Views.Controls.StandartControls">
 	<ScrollView>
 		<StackLayout HorizontalOptions="FillAndExpand">
@@ -68,8 +69,84 @@
 				<TimePicker />
 			</StackLayout>
 			<StackLayout Orientation="Horizontal">
-				<Label />
+				<Label Text="Working with Grid"/>
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+          </Grid.RowDefinitions>
+
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+          </Grid.ColumnDefinitions>
+
+          <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="Red" />
+          <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="Blue" />
+          <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="Aqua" />
+          <BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="Green" />
+        </Grid>
 			</StackLayout>
+      <StackLayout>
+        <Label Text="Grid Sample"/>
+        <AbsoluteLayout>
+          <Grid x:Name="grid"
+                ColumnSpacing="1"
+                AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                AbsoluteLayout.LayoutFlags="All" />
+          <Frame x:Name="overlay"
+                 OutlineColor="Blue"
+                 BackgroundColor="Red"
+                 Opacity="0"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.5, AutoSize, AutoSize"
+                 AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Label x:Name="label"
+                   TextColor="White"
+                   FontSize="Large" />
+          </Frame>
+        </AbsoluteLayout>
+      </StackLayout>
+      <StackLayout>
+        <Label Text="Grid with custom GridLength"/>
+        <Grid>
+          <Grid.Resources>
+            <ResourceDictionary>
+              <OnPlatform x:Key="keyThickness" x:TypeArguments="GridLength" iOS="2" Android="10" WinPhone="5"/>
+            </ResourceDictionary>
+          </Grid.Resources>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="{StaticResource keyThickness}"/>
+            <RowDefinition Height="{StaticResource keyThickness}"/>
+          </Grid.RowDefinitions>
+
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+          </Grid.ColumnDefinitions>
+
+          <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="Red" />
+          <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="Blue" />
+          <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="Aqua" />
+          <BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="Green" />
+        </Grid>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Grid with changing orientation"/>
+        <Grid x:Name="mainGrid">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+          </Grid.RowDefinitions>
+
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0"/>
+          </Grid.ColumnDefinitions>
+
+          <BoxView Grid.Row="0" Grid.Column="0" Color="Red" HeightRequest="50" WidthRequest="50"/>
+          <BoxView Grid.Row="1" Grid.Column="0" Color="Aqua" x:Name="boxview12" HeightRequest="50" WidthRequest="50" />
+        </Grid>
+      </StackLayout>
 			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
 				<Label Text="SearchBar"/>
 				<StackLayout>

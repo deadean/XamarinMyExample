@@ -20,13 +20,13 @@
     <AppXManifest Include="D:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-08-10T14:57:03.525</Modified>
+      <Modified>2015-08-11T12:34:31.871</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\MainApp.Windows81.exe">
       <PackagePath>MainApp.Windows81.exe</PackagePath>
-      <Modified>2015-08-10T14:57:02.749</Modified>
+      <Modified>2015-08-11T12:34:31.175</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\XamarinMyExample\MainApp\packages\Portable.MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.dll">
       <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
@@ -42,7 +42,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp\bin\Debug\MainApp.dll">
       <PackagePath>MainApp.dll</PackagePath>
-      <Modified>2015-08-10T14:57:01.702</Modified>
+      <Modified>2015-08-11T12:34:30.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\XamarinMyExample\MainApp\Services\MainApp.Services\bin\Debug\MainApp.Services.dll">
       <PackagePath>MainApp.Services.dll</PackagePath>
@@ -90,7 +90,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp\bin\Debug\MainApp.UI.Common.VVms.dll">
       <PackagePath>MainApp.UI.Common.VVms.dll</PackagePath>
-      <Modified>2015-08-10T14:57:00.123</Modified>
+      <Modified>2015-08-10T14:59:13.638</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp\bin\Debug\MainApp.Data.dll">
       <PackagePath>MainApp.Data.dll</PackagePath>
@@ -106,7 +106,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp\bin\Debug\MainApp.UI.Common.Views.dll">
       <PackagePath>MainApp.UI.Common.Views.dll</PackagePath>
-      <Modified>2015-08-10T14:57:01.118</Modified>
+      <Modified>2015-08-11T12:34:29.259</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\XamarinMyExample\MainApp\MainApp\MainApp\bin\Debug\Library.dll">
       <PackagePath>Library.dll</PackagePath>
@@ -250,7 +250,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\XamarinMyExample\MainApp\MainApp.Windows81\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-08-10T14:57:03.135</Modified>
+      <Modified>2015-08-11T12:34:31.374</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

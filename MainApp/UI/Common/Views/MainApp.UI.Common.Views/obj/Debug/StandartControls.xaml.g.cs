@@ -34,6 +34,16 @@ namespace MainApp.UI.Common.Views.Implementations.Views.Controls {
         
         private Switch @switch;
         
+        private Grid grid;
+        
+        private Frame overlay;
+        
+        private Label label;
+        
+        private Grid mainGrid;
+        
+        private BoxView boxview12;
+        
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(StandartControls));
             slider = this.FindByName<Slider>("slider");
@@ -45,6 +55,11 @@ namespace MainApp.UI.Common.Views.Implementations.Views.Controls {
             label2 = this.FindByName<Label>("label2");
             stepper = this.FindByName<Stepper>("stepper");
             @switch = this.FindByName<Switch>("switch");
+            grid = this.FindByName<Grid>("grid");
+            overlay = this.FindByName<Frame>("overlay");
+            label = this.FindByName<Label>("label");
+            mainGrid = this.FindByName<Grid>("mainGrid");
+            boxview12 = this.FindByName<BoxView>("boxview12");
         }
     }
 }
