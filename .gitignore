@@ -4,3 +4,6 @@ MainApp/Common/MainProject.Common/obj/Debug/DesignTimeResolveAssemblyReferences.
 *.exe
 *.pdb
 *.cache
+*.dll
+bin
+obj
