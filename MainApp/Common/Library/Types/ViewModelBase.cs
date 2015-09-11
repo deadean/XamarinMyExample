@@ -3,6 +3,7 @@
 	using GalaSoft.MvvmLight;
 	using System;
 	using System.Diagnostics;
+	using System.Runtime.CompilerServices;
 	using System.Threading;
 
 	public interface INotifyPropertyChangedWithRaise
@@ -71,6 +72,14 @@
 		#endregion // Public Methods
 
 		#region Protected Methods
+
+		bool SetProperty<T>(ref T storage, T value, [CallerMemberName] string propertyName = null)
+		{
+			if (Object.Equals(storage, value)) return false;
+			storage = value;
+			this.RaisePropertyChanged(propertyName);
+			return true;
+		} 
 
 		protected void Invoke(Action actionToExecute)
 		{
