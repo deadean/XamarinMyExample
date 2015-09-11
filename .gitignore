@@ -1,6 +1,6 @@
-*.cache
-*.exe
-*.pdb
 *.dll
+*.pdb
+*.mdb
+*.cache
 bin
 obj
