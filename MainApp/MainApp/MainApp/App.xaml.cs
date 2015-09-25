@@ -185,6 +185,8 @@ namespace MainApp
 			navService.Register<TabItemControlsVm, PageButtons, PageButtonsVm>();
 			navService.Register<TabItemControlsVm, PageAbsoluteLayout, PageAbsoluteLayoutVm>();
 			navService.Register<TabItemControlsVm, StandartControls, StandartControlsVm>();
+			navService.Register<TabItemControlsVm, PageAnimations, PageAnimationsVm>();
+			navService.Register<TabItemControlsVm, PageCollectionViews, PageCollectionViewsVm>();
 			navService.Register<TabItemXAMLVm, ParameteredConstructorInXaml, PageParameteredConstructorInXamlVm>();
 			navService.Register<TabItemXAMLVm, PageDeviceOnPlatformInXaml, PageDeviceOnPlatformInXamlVm>();
 			navService.Register<TabItemXAMLVm, PageResourceDictionary, PageResourceDictionaryVm>();

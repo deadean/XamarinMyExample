@@ -27,6 +27,15 @@ namespace Library.Extensions
 			observableBase.RaisePropertyChanged1(propertyName);
 		}
 
+		public static bool SetProperty<T>(this T observableBase, ref T storage, T value, [CallerMemberName] string propertyName = null)
+			where T : INotifyPropertyChangedWithRaise
+		{
+			if (Object.Equals(storage, value)) return false;
+			storage = value;
+			OnPropertyChanged<T>(observableBase, propertyName);
+			return true;
+		} 
+
 		/// <summary>
 		/// Raises PropertyChanged event.
 		/// To use: call the extension method with this: this.OnPropertyChanged(n => n.Title, n => n.Text);

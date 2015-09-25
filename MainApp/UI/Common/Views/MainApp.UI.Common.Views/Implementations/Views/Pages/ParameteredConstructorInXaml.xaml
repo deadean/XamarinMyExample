@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+						 xmlns:local="clr-namespace:MainApp.UI.Common.VVms.Implementations.ViewModels.XAML;assembly=MainApp.UI.Common.VVms"
              x:Class="MainApp.UI.Common.Views.Implementations.Views.Pages.ParameteredConstructorInXaml">
   <StackLayout>
     <StackLayout>
@@ -98,5 +99,20 @@
         </BoxView.Color>
       </BoxView>
     </StackLayout>
+
+		<StackLayout Orientation="Horizontal">
+			<StackLayout.Resources>
+				<ResourceDictionary>
+					<local:ViewModelInXaml x:Key="localVm">
+						<x:Arguments>
+							<x:String>hello</x:String>
+						</x:Arguments>
+					</local:ViewModelInXaml>
+				</ResourceDictionary>
+			</StackLayout.Resources>
+			<Label Text="Initialization viewmodel as resourcse with params"/>
+			<Label Text="{Binding TestParam}" TextColor="Red"
+						 BindingContext="{StaticResource localVm}" />
+		</StackLayout>
   </StackLayout>
 </ContentPage>

@@ -31,6 +31,10 @@ namespace MainApp.UI.Common.VVms.Implementations.ViewModels.MainPage
 				, new AsyncCommand(async () => await this.modNavigationService.NavigateAsync<TabItemControlsVm, PageAbsoluteLayoutVm>(this))));
 			Menus.Add(new MenuItemVm("Slider/Stepper/Switch/Checkbox/Editor/SearchBar/DateTimePicker"
 				, new AsyncCommand(async () => await this.modNavigationService.NavigateAsync<TabItemControlsVm, StandartControlsVm>(this))));
+			Menus.Add(new MenuItemVm("Working with animations"
+				, new AsyncCommand(async () => await this.modNavigationService.NavigateAsync<TabItemControlsVm, PageAnimationsVm>(this))));
+			Menus.Add(new MenuItemVm("Working with collection views"
+				, new AsyncCommand(async () => await this.modNavigationService.NavigateAsync<TabItemControlsVm, PageCollectionViewsVm>(this))));
 		}
 		
 

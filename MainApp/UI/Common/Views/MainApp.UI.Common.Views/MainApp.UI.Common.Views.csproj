@@ -36,6 +36,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Controls\Converters\ObjectToIndexConverter.cs" />
     <Compile Include="Controls\Enums\enSelectionMode.cs" />
     <Compile Include="Controls\Implementations\CheckBoxes\CustomCheckBox.xaml.cs">
       <DependentUpon>CustomCheckBox.xaml</DependentUpon>
@@ -63,8 +64,14 @@
     <Compile Include="Implementations\Views\Controls\PageAbsoluteLayout.xaml.cs">
       <DependentUpon>PageAbsoluteLayout.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Implementations\Views\Controls\PageAnimations.xaml.cs">
+      <DependentUpon>PageAnimations.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Implementations\Views\Controls\PageButtons.xaml.cs">
       <DependentUpon>PageButtons.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Implementations\Views\Controls\PageCollectionViews.xaml.cs">
+      <DependentUpon>PageCollectionViews.xaml</DependentUpon>
     </Compile>
     <Compile Include="Implementations\Views\Controls\PageToolBars.xaml.cs">
       <DependentUpon>PageToolBars.xaml</DependentUpon>
@@ -158,7 +165,6 @@
     <Content Include="Implementations\Views\MainPage\ResourcesIcon\Synchronization.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controls\Converters\" />
     <Folder Include="Implementations\Images\Xaml\" />
   </ItemGroup>
   <ItemGroup>
@@ -291,6 +297,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Implementations\Views\Xamarin1\PageDataBinding.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Implementations\Views\Controls\PageAnimations.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Implementations\Views\Controls\PageCollectionViews.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+						 xmlns:converters="clr-namespace:MainApp.UI.Common.Views.Controls.Converters"
+             x:Class="MainApp.UI.Common.Views.Implementations.Views.Controls.PageCollectionViews">
+	<StackLayout>
+		<StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+			<Label Text="Working with picker" x:Name="label"/>
+			<Picker WidthRequest="100" HorizontalOptions="Fill">
+				<Picker.Items>
+					<x:String>Font = 8</x:String>
+					<x:String>Font = 10</x:String>
+					<x:String>Font = 16</x:String>
+				</Picker.Items>
+				<Picker.SelectedIndex>
+					<Binding Source="{x:Reference label}" Path="FontSize">
+						<Binding.Converter>
+							<converters:ObjectToIndexConverter x:TypeArguments="x:Double">
+								<x:Double>8</x:Double>
+								<x:Double>10</x:Double>
+								<x:Double>16</x:Double>
+							</converters:ObjectToIndexConverter>
+						</Binding.Converter>
+					</Binding>
+				</Picker.SelectedIndex>
+			</Picker>
+		</StackLayout>
+		<StackLayout Orientation="Horizontal" HorizontalOptions="Fill" HeightRequest="200">
+			<Label Text="Working with listview. Type something in textBox" />
+			<ListView x:Name="listView" HorizontalOptions="Fill" SeparatorColor="Blue" ItemsSource="{Binding Items}" 
+								SelectedItem="{Binding Source={x:Reference textbox}, Path=Text, Mode=TwoWay}"
+								/>
+			<Entry x:Name="textbox" />
+		</StackLayout>
+		<StackLayout Orientation="Horizontal" HorizontalOptions="Fill" HeightRequest="200">
+			<Label Text="Working with listview. DataTemplate from code" />
+			<ListView x:Name="listView1" HorizontalOptions="Fill" SeparatorColor="Blue" ItemsSource="{Binding Items1}" />
+		</StackLayout>
+	</StackLayout>
+</ContentPage>
