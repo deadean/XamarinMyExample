@@ -1,0 +1,29 @@
+﻿<Properties StartupItem="console1/console1.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="console1/Program.cs">
+    <Files>
+      <File FileName="console1/Program.cs" Line="238" Column="55" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="console1" expanded="True" selected="True">
+            <Node name="console1" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/oleksandr/Projects/console1/console1/Program.cs" line="147" column="1" />
+      <Breakpoint file="/Users/oleksandr/Projects/console1/console1/Program.cs" line="216" column="1" />
+      <Breakpoint file="/Users/oleksandr/Projects/console1/console1/Program.cs" line="263" column="17" />
+      <Breakpoint file="/Users/oleksandr/Projects/console1/console1/Program.cs" line="265" column="1" />
+      <Breakpoint file="/Users/oleksandr/Projects/console1/console1/Program.cs" line="221" column="1" />
+      <Breakpoint file="/Users/oleksandr/Projects/console1/console1/Program.cs" line="240" column="1" />
+      <Breakpoint file="/Users/oleksandr/Projects/console1/console1/Program.cs" line="242" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
