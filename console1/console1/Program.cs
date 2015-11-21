@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.Text.RegularExpressions;
 using System.Linq;
+using System.Text;
 
 namespace console1
 {
@@ -25,7 +26,10 @@ namespace console1
 		public string FirstName{ get; set;}
 		public string LastName{ get; set;}
 		public string MiddleName{ get; set;}
-		public string Age{ get; set;}
+		public string City{ get; set;}
+		public string Postal{ get; set;}
+		public string Country{ get; set; }
+        public string Age{ get; set;}
 		public string Gender{ get; set;}
 		public string SocialMediaImgUrl{ get; set;}
 		public string OneTimeKey{ get; set;}
@@ -199,10 +203,34 @@ namespace console1
 			} catch (Exception ex) {
 				
 			}
-
 		}
 
-		public async Task GetUserMessages()
+        public async Task UpdateUserInfo()
+        {
+            try
+            {
+                using (var httpClient = new HttpClient())
+                {
+                    httpClient.BaseAddress = new Uri(baseapiurl);
+                    httpClient.DefaultRequestHeaders.Accept.Clear();
+                    httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", tm.Access_Token);
+                    httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/x-www-form-urlencoded"));
+
+                    var userJson = JsonConvert.SerializeObject(this.userInfo);
+                    HttpContent contentPost = new StringContent(userJson, Encoding.UTF8,"application/json");
+                    var responseMessage = 
+                        await httpClient.PostAsync(string.Format("api/Person/UpdateUserInfo?OTKey={0}", OTkey), contentPost);
+
+                    Console.WriteLine(responseMessage);
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        public async Task GetUserMessages()
 		{
 			try {
 				using(var httpClient = new HttpClient()) 
@@ -315,11 +343,18 @@ namespace console1
 			Task t8 = a.GetUserInfo ();
 			t8.Wait ();
 
-			Task t9 = a.GetMessageById (a.userInfo.Messages.First().MessageId);
-			t9.Wait ();
+            a.userInfo.Age = "10";
+            Task t10 = a.UpdateUserInfo();
+            t10.Wait();
+
+            Task t11 = a.GetUserInfo();
+            t11.Wait();
+
+            //Task t9 = a.GetMessageById (a.userInfo.Messages.First().MessageId);
+            //t9.Wait ();
 
 
 
-		}
+        }
 	}
 }
