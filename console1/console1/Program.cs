@@ -35,9 +35,9 @@ namespace console1
         public string Age{ get; set;}
 		public string Gender{ get; set;}
 		public string SocialMediaImgUrl{ get; set;}
-		public byte[] UserImgUpload{ get; set;}
+        public byte[] UserImgUpload{ get; set;}
 		public string OneTimeKey{ get; set;}
-		public Invites[] Invites{ get; set;}
+        public Invites[] Invites{ get; set;}
 		public Connection[] Connections{ get; set;}
 		public Message[] Messages{ get; set;}
 	}
@@ -68,7 +68,7 @@ namespace console1
 		public string RecipientId{ get; set;}
 		public string RecipientEmail{ get; set;}
 		public string Description{ get; set;}
-		public string DateRecorded{ get; set;}
+		public DateTime DateRecorded{ get; set;}
 		public string FileName{ get; set;}
 		public string SizeBytes{ get; set;}
 		public string SizeTime{ get; set;}
@@ -77,7 +77,8 @@ namespace console1
 		public string Title{ get; set;}
 		public string DateActivity{ get; set;}
 		public string OneTimeKey{ get; set;}
-		public byte[] messageByteArray{ get; set;}
+        public string ProfileUrl { get; set; }
+        public byte[] messageByteArray{ get; set;}
 	}
 	class A
 	{
@@ -278,20 +279,22 @@ namespace console1
 					string filePath = Path.Combine(ImagesDirectory, "../../check33.png");
 					bool isExist = File.Exists(filePath);
 
-					Image img = Image.FromFile(filePath);
-					byte[] arr;
-					using (MemoryStream ms = new MemoryStream())
-					{
-						img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
-						arr =  ms.ToArray();
-					}
+                    //Image img = Image.FromFile(filePath);
+                    //byte[] arr;
+                    //using (MemoryStream ms = new MemoryStream())
+                    //{
+                    //	img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    //	arr =  ms.ToArray();
+                    //}
 
-					this.userInfo.UserImgUpload = arr;
+                    //this.userInfo.UserImgUpload = arr;
+                    this.userInfo.UserImgUpload = File.ReadAllBytes(filePath);
 					
                     var userJson = JsonConvert.SerializeObject(this.userInfo);
                     HttpContent contentPost = new StringContent(userJson, Encoding.UTF8,"application/json");
                     var responseMessage = 
                         await httpClient.PostAsync(string.Format("api/Person/UpdateUserInfo?OTKey={0}", OTkey), contentPost);
+                    string mes = await responseMessage.Content.ReadAsStringAsync();
 
                     Console.WriteLine(responseMessage);
                 }
@@ -320,7 +323,16 @@ namespace console1
 					bool isExist = File.Exists(filePath);
 
 					var bytes = File.ReadAllBytes(filePath);;
-					modMessage = new Message(){OneTimeKey = this.userInfo.OneTimeKey, messageByteArray = bytes, RecipientEmail="deadean2@yandex.ru"};
+					modMessage = new Message(){
+                        OneTimeKey = this.userInfo.OneTimeKey,
+                        messageByteArray = bytes,
+                        RecipientEmail ="deadean2@yandex.ru",
+                        DateRecorded = DateTime.Now,
+                        Description = "test message",
+                        SenderId = "1018580",
+                        TenantId = "1",
+                        Title = "test title"
+                    };
 					var json = JsonConvert.SerializeObject(this.modMessage);
 					HttpContent contentPost = new StringContent(json, Encoding.UTF8,"application/json");
 					var responseMessage = 
@@ -480,14 +492,14 @@ namespace console1
 			//t13.Wait ();
 
             //a.userInfo.Age = "10";
-            //Task t10 = a.UpdateUserInfo();
-            //t10.Wait();
+            Task t10 = a.UpdateUserInfo();
+            t10.Wait();
 
-            //Task t11 = a.GetUserInfo();
-            //t11.Wait();
+            Task t11 = a.GetUserInfo();
+            t11.Wait();
 
-			Task t14 = a.UploadMessage();
-			t14.Wait();
+			//Task t14 = a.UploadMessage();
+			//t14.Wait();
 
 			//Task t12 = a.ResetPassword();
 			//t12.Wait();
