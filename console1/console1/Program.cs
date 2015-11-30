@@ -7,6 +7,9 @@ using Newtonsoft.Json;
 using System.Text.RegularExpressions;
 using System.Linq;
 using System.Text;
+using System.IO;
+using System.Drawing;
+using System.Reflection;
 
 namespace console1
 {
@@ -32,6 +35,7 @@ namespace console1
         public string Age{ get; set;}
 		public string Gender{ get; set;}
 		public string SocialMediaImgUrl{ get; set;}
+		public byte[] UserImgUpload{ get; set;}
 		public string OneTimeKey{ get; set;}
 		public Invites[] Invites{ get; set;}
 		public Connection[] Connections{ get; set;}
@@ -41,6 +45,11 @@ namespace console1
 	class Invites
 	{
 		
+	}
+
+	class ConnectionsInfo
+	{
+		public Connection[] Connections{get;set;}
 	}
 
 	class Connection
@@ -67,6 +76,8 @@ namespace console1
 		public string Flag{ get; set;}
 		public string Title{ get; set;}
 		public string DateActivity{ get; set;}
+		public string OneTimeKey{ get; set;}
+		public byte[] messageByteArray{ get; set;}
 	}
 	class A
 	{
@@ -74,7 +85,7 @@ namespace console1
 		string OTkey;
 		string baseapiurl = "http://voiceshare.bauengroup.us/";
 		string user = "deadean8@yandex.ru";
-		string pass = "123456Qq_";
+		string pass = "1234567Qq_";
 
 		public async Task Test1 ()
 		{
@@ -187,6 +198,7 @@ namespace console1
 		public async Task GetUserInfo()
 		{
 			try {
+				
 				using(var httpClient = new HttpClient()) 
 				{
 					httpClient.BaseAddress = new Uri(baseapiurl);
@@ -205,6 +217,52 @@ namespace console1
 			}
 		}
 
+		public async Task GetUserConnections()
+		{
+			try {
+				using(var httpClient = new HttpClient()) 
+				{
+					httpClient.BaseAddress = new Uri(baseapiurl);
+					httpClient.DefaultRequestHeaders.Accept.Clear();
+					httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer",tm.Access_Token);
+					httpClient.DefaultRequestHeaders.Accept.Add (new MediaTypeWithQualityHeaderValue ("application/x-www-form-urlencoded"));
+
+					var responseMessage = await httpClient.GetAsync (string.Format("api/Person/GetConnectionList?OTKey={0}", OTkey));
+					var resp = await responseMessage.Content.ReadAsStringAsync();
+					//var connections = JsonConvert.DeserializeObject<ConnectionsInfo>(resp);
+
+					Console.WriteLine (resp);
+				}
+			} catch (Exception ex) {
+
+			}
+		}
+
+		public async Task DeleteUserConnection()
+		{
+			try
+			{
+				using (var httpClient = new HttpClient())
+				{
+					httpClient.BaseAddress = new Uri(baseapiurl);
+					httpClient.DefaultRequestHeaders.Accept.Clear();
+					httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", tm.Access_Token);
+					httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/x-www-form-urlencoded"));
+
+					var responseMessage = 
+						await httpClient.DeleteAsync(string.Format("api/Person/DeleteConnections?OTKey={0}&personId={1}"
+							, OTkey, userInfo.Connections.First().OtherPersonId));
+
+					Console.WriteLine(responseMessage);
+				}
+			}
+			catch (Exception ex)
+			{
+
+
+			}
+		}
+
         public async Task UpdateUserInfo()
         {
             try
@@ -216,6 +274,20 @@ namespace console1
                     httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", tm.Access_Token);
                     httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/x-www-form-urlencoded"));
 
+					string ImagesDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+					string filePath = Path.Combine(ImagesDirectory, "../../check33.png");
+					bool isExist = File.Exists(filePath);
+
+					Image img = Image.FromFile(filePath);
+					byte[] arr;
+					using (MemoryStream ms = new MemoryStream())
+					{
+						img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+						arr =  ms.ToArray();
+					}
+
+					this.userInfo.UserImgUpload = arr;
+					
                     var userJson = JsonConvert.SerializeObject(this.userInfo);
                     HttpContent contentPost = new StringContent(userJson, Encoding.UTF8,"application/json");
                     var responseMessage = 
@@ -229,6 +301,67 @@ namespace console1
 
             }
         }
+
+		Message modMessage;
+
+		public async Task UploadMessage()
+		{
+			try
+			{
+				using (var httpClient = new HttpClient())
+				{
+					httpClient.BaseAddress = new Uri(baseapiurl);
+					httpClient.DefaultRequestHeaders.Accept.Clear();
+					httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", tm.Access_Token);
+					httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/x-www-form-urlencoded"));
+
+					string ImagesDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+					string filePath = Path.Combine(ImagesDirectory, "../../test.mp3");
+					bool isExist = File.Exists(filePath);
+
+					var bytes = File.ReadAllBytes(filePath);;
+					modMessage = new Message(){OneTimeKey = this.userInfo.OneTimeKey, messageByteArray = bytes, RecipientEmail="deadean2@yandex.ru"};
+					var json = JsonConvert.SerializeObject(this.modMessage);
+					HttpContent contentPost = new StringContent(json, Encoding.UTF8,"application/json");
+					var responseMessage = 
+						await httpClient.PostAsync(string.Format("api/Message/UploadMessage"), contentPost);
+					string mes = await responseMessage.Content.ReadAsStringAsync();
+
+					Console.WriteLine(responseMessage);
+				}
+			}
+			catch (Exception ex)
+			{
+
+			}
+		}
+
+		public async Task ResetPassword()
+		{
+			try
+			{
+				using (var httpClient = new HttpClient())
+				{
+					httpClient.BaseAddress = new Uri(baseapiurl);
+					httpClient.DefaultRequestHeaders.Accept.Clear();
+					httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", tm.Access_Token);
+					httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/x-www-form-urlencoded"));
+
+					HttpContent contentPost = new StringContent("", Encoding.UTF8,"application/json");
+					var responseMessage = 
+						await httpClient.PostAsync(
+							string.Format("api/Person/ResetPassword?OTKey={0}&Password={1}&NewPassword={2}&ConfirmPass={3}"
+								, OTkey, pass, "1234567Qq_", "1234567Qq_"), contentPost);
+
+					Console.WriteLine(responseMessage);
+					Console.WriteLine(await responseMessage.Content.ReadAsStringAsync());
+				}
+			}
+			catch (Exception ex)
+			{
+
+			}
+		}
 
         public async Task GetUserMessages()
 		{
@@ -343,12 +476,21 @@ namespace console1
 			Task t8 = a.GetUserInfo ();
 			t8.Wait ();
 
-            a.userInfo.Age = "10";
-            Task t10 = a.UpdateUserInfo();
-            t10.Wait();
+			//Task t13 = a.DeleteUserConnection ();
+			//t13.Wait ();
 
-            Task t11 = a.GetUserInfo();
-            t11.Wait();
+            //a.userInfo.Age = "10";
+            //Task t10 = a.UpdateUserInfo();
+            //t10.Wait();
+
+            //Task t11 = a.GetUserInfo();
+            //t11.Wait();
+
+			Task t14 = a.UploadMessage();
+			t14.Wait();
+
+			//Task t12 = a.ResetPassword();
+			//t12.Wait();
 
             //Task t9 = a.GetMessageById (a.userInfo.Messages.First().MessageId);
             //t9.Wait ();
