@@ -25,6 +25,7 @@ namespace console1
 	class UserInfo
 	{
 		public string UserId{ get; set;}
+		public string PersonId{ get; set;}
 		public string Email{ get; set;}
 		public string FirstName{ get; set;}
 		public string LastName{ get; set;}
@@ -58,6 +59,25 @@ namespace console1
 		public string PersonId{ get; set;}
 		public string OtherPersonId{ get; set;}
 		public string OtherAction{ get; set;}
+	}
+
+	class PlayListJson
+	{
+		public string OTKey{ get; set;}
+		public string PlaylistId{ get; set;}
+		public string TenantId{ get; set;}
+		public string OwnerId{ get; set;}
+		public string Description{ get; set;}
+		public string CreatedDate{ get; set;}
+		public IList<PlaylistMessagesJson> PlaylistMessages{ get; set;}
+	}
+
+	class PlaylistMessagesJson
+	{
+		public string PlaylistId{ get; set;}
+		public string SeqNbr{ get; set;}
+		public string MsgId{ get; set;}
+		public string MsgOwnerImgUrl{ get; set;}
 	}
 
 	class Message
@@ -239,6 +259,28 @@ namespace console1
 			}
 		}
 
+		public async Task GetUserPlaylists()
+		{
+			try {
+				using(var httpClient = new HttpClient()) 
+				{
+					httpClient.BaseAddress = new Uri(baseapiurl);
+					httpClient.DefaultRequestHeaders.Accept.Clear();
+					httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer",tm.Access_Token);
+					httpClient.DefaultRequestHeaders.Accept.Add (new MediaTypeWithQualityHeaderValue ("application/x-www-form-urlencoded"));
+
+					var responseMessage = await httpClient.GetAsync (string.Format("api/Library/GetUserPlaylists?OTKey={0}", OTkey));
+					var resp = await responseMessage.Content.ReadAsStringAsync();
+					this.playlists = JsonConvert.DeserializeObject<IList<PlayListJson>>(resp);
+					//var connections = JsonConvert.DeserializeObject<ConnectionsInfo>(resp);
+
+					Console.WriteLine (resp);
+				}
+			} catch (Exception ex) {
+
+			}
+		}
+
 		public async Task DeleteUserConnection()
 		{
 			try
@@ -304,6 +346,64 @@ namespace console1
 
             }
         }
+
+		public async Task UpdatePlayListsMessages()
+		{
+			try
+			{
+				using (var httpClient = new HttpClient())
+				{
+					httpClient.BaseAddress = new Uri(baseapiurl);
+					httpClient.DefaultRequestHeaders.Accept.Clear();
+					httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", tm.Access_Token);
+					httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/x-www-form-urlencoded"));
+
+					//this.playlists[1].PlaylistMessages = new PlaylistMessagesJson[1];
+					this.playlists[1].PlaylistMessages.Add(new PlaylistMessagesJson(){SeqNbr = "2", MsgId = this.userInfo.Messages[0].MessageId});
+					var userJson = JsonConvert.SerializeObject(this.playlists[1]);
+					HttpContent contentPost = new StringContent(userJson, Encoding.UTF8,"application/json");
+					var responseMessage = 
+						await httpClient.PostAsync(string.Format("api/Library/UpdatePlaylist"), contentPost);
+					string mes = await responseMessage.Content.ReadAsStringAsync();
+
+					Console.WriteLine(responseMessage);
+				}
+			}
+			catch (Exception ex)
+			{
+
+			}
+		}
+
+
+		IList<PlayListJson> playlists;
+
+		public async Task CreatePlaylist()
+		{
+			try
+			{
+				using (var httpClient = new HttpClient())
+				{
+					httpClient.BaseAddress = new Uri(baseapiurl);
+					httpClient.DefaultRequestHeaders.Accept.Clear();
+					httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", tm.Access_Token);
+					httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/x-www-form-urlencoded"));
+					var playlist = new PlayListJson(){OTKey = OTkey, TenantId="1", OwnerId = this.userInfo.PersonId, Description = "test playlist"};
+					var userJson = JsonConvert.SerializeObject(playlist);
+					HttpContent contentPost = new StringContent(userJson, Encoding.UTF8,"application/json");
+					var responseMessage = 
+						await httpClient.PostAsync(string.Format("api/Library/AddPlaylist"), contentPost);
+					string mes = await responseMessage.Content.ReadAsStringAsync();
+
+					Console.WriteLine(responseMessage);
+				}
+			}
+			catch (Exception ex)
+			{
+
+			}
+		}
+
 
 		Message modMessage;
 
@@ -492,11 +592,23 @@ namespace console1
 			//t13.Wait ();
 
             //a.userInfo.Age = "10";
-            Task t10 = a.UpdateUserInfo();
-            t10.Wait();
+            //Task t10 = a.UpdateUserInfo();
+            //t10.Wait();
 
-            Task t11 = a.GetUserInfo();
-            t11.Wait();
+            //Task t11 = a.GetUserInfo();
+            //t11.Wait();
+
+			//Task t21 = a.CreatePlaylist();
+			//t21.Wait();
+
+			Task t20 = a.GetUserPlaylists();
+			t20.Wait();
+
+			Task t22 = a.UpdatePlayListsMessages ();
+			t22.Wait();
+
+			Task t21 = a.GetUserPlaylists();
+			t21.Wait();
 
 			//Task t14 = a.UploadMessage();
 			//t14.Wait();

@@ -19,5 +19,6 @@
 
 -(void) customizeViewWithText:(NSString *)message;
 -(void) StartMicrophone:(NSString *)message;
+-(void) StopMicrophone:(NSString *)message;
 
 @end

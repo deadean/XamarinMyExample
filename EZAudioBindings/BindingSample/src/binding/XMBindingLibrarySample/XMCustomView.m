@@ -26,6 +26,7 @@
         // do initialization hurr
         self.isCustomized = false;
         self.microphone = [EZMicrophone microphoneWithDelegate:self];
+        
     }
     
     self.frame = [super bounds];
@@ -40,8 +41,14 @@
 
 -(void) StartMicrophone:(NSString *)message
 {
+    //self.superview.backgroundColor = [UIColor yellowColor];
+    //self.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
+    //self.alpha = 0.0;
+    
     EZAudioPlot *plot = [[EZAudioPlot alloc] init];
-    plot.backgroundColor = [UIColor colorWithRed:0.984 green:0.471 blue:0.525 alpha:1.0];
+    //plot.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
+    //plot.alpha = 0.5;
+    plot.backgroundColor = [UIColor grayColor];
     plot.color           = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
     
     plot.plotType = EZPlotTypeRolling;
@@ -49,6 +56,7 @@
     plot.shouldMirror = YES;
     plot.shouldFill = YES;
     plot.frame = [super bounds];
+    [plot sizeToFit];
     
     
     
@@ -56,6 +64,11 @@
     self.audioPlot = plot;
     
     [self.microphone startFetchingAudio];
+}
+
+-(void) StopMicrophone:(NSString *)message
+{
+    [self.microphone stopFetchingAudio];
 }
 
 -(void) customizeViewWithText:(NSString *)message
