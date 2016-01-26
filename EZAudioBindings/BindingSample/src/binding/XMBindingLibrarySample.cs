@@ -82,6 +82,9 @@ namespace XMBindingLibrarySample
         [Export("StopMicrophone:")]
         void StopMicrophone(string message);
         
+        [Export("ClearPlot:")]
+        void ClearPlot(string message);
+        
 	}
 
 	[Model]

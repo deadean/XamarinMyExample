@@ -30,7 +30,7 @@
 
 #define kEZAudioPlotMaxHistoryBufferLength (8192)
 
-#define kEZAudioPlotDefaultHistoryBufferLength (1024)
+#define kEZAudioPlotDefaultHistoryBufferLength (256)
 
 /**
  `EZAudioPlot`, a subclass of `EZPlot`, is a cross-platform (iOS and OSX) class that plots an audio waveform using Core Graphics. 

@@ -48,9 +48,9 @@
     EZAudioPlot *plot = [[EZAudioPlot alloc] init];
     //plot.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
     //plot.alpha = 0.5;
-    plot.backgroundColor = [UIColor grayColor];
-    plot.color           = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
-    
+    plot.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0]; //[UIColor lightGrayColor];
+    plot.color           = [UIColor blueColor];
+    //plot.set setRollingHistoryLength:(int)value
     plot.plotType = EZPlotTypeRolling;
     
     plot.shouldMirror = YES;
@@ -64,6 +64,11 @@
     self.audioPlot = plot;
     
     [self.microphone startFetchingAudio];
+}
+
+-(void) ClearPlot:(NSString *)message
+{
+    [self.audioPlot removeFromSuperview];
 }
 
 -(void) StopMicrophone:(NSString *)message
