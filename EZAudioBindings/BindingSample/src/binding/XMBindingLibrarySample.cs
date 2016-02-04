@@ -85,6 +85,21 @@ namespace XMBindingLibrarySample
         [Export("ClearPlot:")]
         void ClearPlot(string message);
         
+        [Export("StartPlayBack:")]
+        void StartPlayBack(string message);
+        
+        [Export("StopPlayBack:")]
+        void StopPlayBack(string message);
+        
+        [Export("ChangeVolume:")]
+        void ChangeVolume(float message);
+        
+        [Export("CurrentPlayBackTime:")]
+        double CurrentPlayBackTime(string message);
+        
+        [Export("ContinuePlayBack:")]
+        void ContinuePlayBack(string message);
+
 	}
 
 	[Model]

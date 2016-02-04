@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0207D4C28CE9023717895E160360445D3C4F1F7B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0207D4C28CE9023717895E160360445D3C4F1F7B" : 0,
+    "9D6FF97A89F512CD81EAE1A971A1D2EB03E03F7C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0D9C6A08-A740-4A6D-8FFD-95D9C1E00EC0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0207D4C28CE9023717895E160360445D3C4F1F7B" : "XamarinMyExample\/",
+    "9D6FF97A89F512CD81EAE1A971A1D2EB03E03F7C" : "EZAudio\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "XMBindingLibrarySample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "EZAudioBindings\/BindingSample\/src\/binding\/XMBindingLibrarySample\/XMBindingLibrarySample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/deadean\/XamarinMyExample.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0207D4C28CE9023717895E160360445D3C4F1F7B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/syedhali\/EZAudio.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9D6FF97A89F512CD81EAE1A971A1D2EB03E03F7C"
+    }
+  ]
+}
