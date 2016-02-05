@@ -118,7 +118,7 @@
     
 }
 
--(void) StartPlayBack:(NSString *)message
+-(float) StartPlayBack:(NSString *)message
 {
     @try {
         NSLog(@"Start playback");
@@ -129,6 +129,7 @@
         [self.player playAudioFile:audioFile];
         self.audioPlot.hidden = true;
         self.playingAudioPlot.hidden = false;
+        return audioFile.totalFrames;
     }
     @catch (NSException *exception) {
         NSLog(@"Exception: %@", exception);
@@ -172,6 +173,20 @@
     @try {
         NSLog(@"ChangeVolume");
         [self.player setVolume:message];
+    }
+    @catch (NSException *exception) {
+        NSLog(@"Exception: %@", exception);
+    }
+    @finally {
+        
+    }
+}
+
+-(void) SeekToFrame:(float)message
+{
+    @try {
+        NSLog(@"SeekToFrame");
+        [self.player seekToFrame:(SInt64)message];
     }
     @catch (NSException *exception) {
         NSLog(@"Exception: %@", exception);

@@ -86,7 +86,7 @@ namespace XMBindingLibrarySample
         void ClearPlot(string message);
         
         [Export("StartPlayBack:")]
-        void StartPlayBack(string message);
+        double StartPlayBack(string message);
         
         [Export("StopPlayBack:")]
         void StopPlayBack(string message);
@@ -99,7 +99,10 @@ namespace XMBindingLibrarySample
         
         [Export("ContinuePlayBack:")]
         void ContinuePlayBack(string message);
-
+        
+        [Export("SeekToFrame:")]
+        void SeekToFrame(float message);
+        
 	}
 
 	[Model]
