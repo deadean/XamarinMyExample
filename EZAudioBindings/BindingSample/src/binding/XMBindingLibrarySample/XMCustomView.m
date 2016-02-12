@@ -186,7 +186,7 @@
 {
     @try {
         NSLog(@"SeekToFrame");
-        [self.player seekToFrame:(SInt64)message];
+        [self.player seekToFrame:(SInt64)(message*self.player.totalFrames)];
     }
     @catch (NSException *exception) {
         NSLog(@"Exception: %@", exception);
@@ -199,7 +199,8 @@
 -(NSTimeInterval) CurrentPlayBackTime:(NSString *)message
 {
     @try {
-        NSLog(@"CurrentPlayBackTime");
+        //NSLog(@"CurrentPlayBackTime");
+        //NSLog(@"total frames: %i", self.player.totalFrames);
         return self.player.currentTime;
     }
     @catch (NSException *exception) {
