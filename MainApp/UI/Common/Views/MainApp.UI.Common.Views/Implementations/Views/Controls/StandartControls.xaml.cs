@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using System.Reflection;
+using System.Collections.ObjectModel;
 
 namespace MainApp.UI.Common.Views.Implementations.Views.Controls
 {
@@ -12,6 +14,8 @@ namespace MainApp.UI.Common.Views.Implementations.Views.Controls
 	{
 		const int COUNT = 50;
 		Random random = new Random();
+		private ObservableCollection<groupedVeggieModel> grouped { get; set; }
+
 
 		// Arrays for Random Name Generator.
 		string[] vowels = { "a", "e", "i", "o", "u", "ai", "ei", "ie", "ou", "oo" };
@@ -19,31 +23,50 @@ namespace MainApp.UI.Common.Views.Implementations.Views.Controls
                                 "n", "p", "q", "r", "s", "t", "v", "w", "x", "z" };
 		public StandartControls()
 		{
-			InitializeComponent();
+			try {
+				InitializeComponent();
 
-			List<View> views = new List<View>();
-			TapGestureRecognizer tapGesture = new TapGestureRecognizer();
-			tapGesture.Tapped += OnBoxViewTapped;
+				List<View> views = new List<View>();
+				TapGestureRecognizer tapGesture = new TapGestureRecognizer();
+				tapGesture.Tapped += OnBoxViewTapped;
 
-			// Create BoxView elements and add to List.
-			for (int i = 0; i < COUNT; i++)
-			{
-				BoxView boxView = new BoxView
+				// Create BoxView elements and add to List.
+				for (int i = 0; i < COUNT; i++)
 				{
-					Color = Color.Blue,
-					HeightRequest = 300 * random.NextDouble(),
-					VerticalOptions = LayoutOptions.End,
-					StyleId = RandomNameGenerator()
-				};
-				boxView.GestureRecognizers.Add(tapGesture);
-				views.Add(boxView);
+					BoxView boxView = new BoxView
+					{
+						Color = Color.Blue,
+						HeightRequest = 300 * random.NextDouble(),
+						VerticalOptions = LayoutOptions.End,
+						StyleId = RandomNameGenerator()
+					};
+					boxView.GestureRecognizers.Add(tapGesture);
+					views.Add(boxView);
+				}
+
+				// Add whole List of BoxView elements to Grid.
+				grid.Children.AddHorizontal(views);
+
+				// Start a timer at the frame rate.
+				Device.StartTimer(TimeSpan.FromMilliseconds(15), OnTimerTick);
+
+				grouped = new ObservableCollection<groupedVeggieModel> ();
+				var veggieGroup = new groupedVeggieModel () { longName = "vegetables", shortName="v" };
+				var fruitGroup = new groupedVeggieModel () { longName = "fruit", shortName = "f" };
+				veggieGroup.Add (new veggieModel () { name = "celery", isReallyAVeggia = true, comment = "try ants on a log" });
+				veggieGroup.Add (new veggieModel () { name = "tomato", isReallyAVeggia = false, comment = "pairs well with basil" });
+				veggieGroup.Add (new veggieModel () { name = "zucchini", isReallyAVeggia = true, comment = "zucchini bread > bannana bread" });
+				veggieGroup.Add (new veggieModel () { name = "peas", isReallyAVeggia = true, comment = "like peas in a pod" });
+				fruitGroup.Add (new veggieModel () {name = "banana", isReallyAVeggia = false,comment = "available in chip form factor"});
+				fruitGroup.Add (new veggieModel () {name = "strawberry", isReallyAVeggia = false,comment = "spring plant"});
+				fruitGroup.Add (new veggieModel () {name = "cherry", isReallyAVeggia = false,comment = "topper for icecream"});
+				grouped.Add (veggieGroup); grouped.Add (fruitGroup);
+				lstView.ItemsSource = grouped;
+				lstView1.ItemsSource = grouped;
+			} catch (Exception ex) {
+				
 			}
 
-			// Add whole List of BoxView elements to Grid.
-			grid.Children.AddHorizontal(views);
-
-			// Start a timer at the frame rate.
-			Device.StartTimer(TimeSpan.FromMilliseconds(15), OnTimerTick);
 		}
 
 		string RandomNameGenerator()
@@ -109,5 +132,38 @@ namespace MainApp.UI.Common.Views.Implementations.Views.Controls
 				 Grid.SetColumn(boxview12, 1);         
 			 }
 		}
+
+		private void OnSelectedIndexChanged(object sender, EventArgs args)
+		{
+			if (ctrEntryPicker == null)
+				return;
+
+			Picker picker = (Picker)sender;
+			int selectedIndex = picker.SelectedIndex;
+
+			if (selectedIndex == -1)
+				return;
+
+			string selectedItem = picker.Items [selectedIndex];
+			PropertyInfo propertyInfo = typeof(Keyboard).GetRuntimeProperty (selectedItem);
+			ctrEntryPicker.Keyboard = (Keyboard)propertyInfo.GetValue (null);
+		}
+	}
+
+	public class veggieModel
+	{
+		public string name { get; set; }
+		public string comment { get; set; }
+		public bool isReallyAVeggia { get; set; }
+		public string image { get; set; }
+		public veggieModel ()
+		{
+		}
+	}
+
+	public class groupedVeggieModel : ObservableCollection<veggieModel>
+	{
+		public string longName { get; set; }
+		public string shortName { get; set; }
 	}
 }

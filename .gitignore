@@ -4,3 +4,5 @@
 *.cache
 bin
 obj
+packages
+MainApp/packages/Xamarin.Forms.1.3.5.6335/lib/WP80/Xamarin.Forms.Xaml.xml

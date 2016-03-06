@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
@@ -99,19 +99,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Common\Library\Library.csproj">
-      <Project>{645a99fc-dc8b-4a34-9b0e-27c2fd719218}</Project>
+      <Project>{645A99FC-DC8B-4A34-9B0E-27C2FD719218}</Project>
       <Name>Library</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Common\MainProject.Common\MainProject.Common.csproj">
-      <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
+      <Project>{67F9D3A8-F71E-4428-913F-C37AE82CDB24}</Project>
       <Name>MainProject.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Data\MainApp.Data\MainApp.Data.csproj">
-      <Project>{d76ccb16-e6df-4ea8-afc6-ba91132756b8}</Project>
+      <Project>{D76CCB16-E6DF-4EA8-AFC6-BA91132756B8}</Project>
       <Name>MainApp.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Common\MainApp.UI.Common\MainApp.UI.Common.csproj">
-      <Project>{091e2edb-68c1-4e91-a38d-9adeaaad1f82}</Project>
+      <Project>{091E2EDB-68C1-4E91-A38D-9ADEAAAD1F82}</Project>
       <Name>MainApp.UI.Common</Name>
     </ProjectReference>
   </ItemGroup>
