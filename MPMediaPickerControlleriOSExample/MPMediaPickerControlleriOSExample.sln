@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPMediaPickerControlleriOSExample", "MPMediaPickerControlleriOSExample\MPMediaPickerControlleriOSExample.csproj", "{ABB81769-5888-4005-AF26-60DFD6412206}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABB81769-5888-4005-AF26-60DFD6412206}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{ABB81769-5888-4005-AF26-60DFD6412206}.Debug|iPhone.Build.0 = Debug|iPhone
+		{ABB81769-5888-4005-AF26-60DFD6412206}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{ABB81769-5888-4005-AF26-60DFD6412206}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{ABB81769-5888-4005-AF26-60DFD6412206}.Release|iPhone.ActiveCfg = Release|iPhone
+		{ABB81769-5888-4005-AF26-60DFD6412206}.Release|iPhone.Build.0 = Release|iPhone
+		{ABB81769-5888-4005-AF26-60DFD6412206}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{ABB81769-5888-4005-AF26-60DFD6412206}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal
