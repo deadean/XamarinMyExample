@@ -1,40 +1,48 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-						 xmlns:converters="clr-namespace:MainApp.UI.Common.Views.Controls.Converters"
-             x:Class="MainApp.UI.Common.Views.Implementations.Views.Controls.PageCollectionViews">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:converters="clr-namespace:MainApp.UI.Common.Views.Controls.Converters" xmlns:local="clr-namespace:MainApp.UI.Common.VVms;assembly=MainApp.UI.Common.VVms" xmlns:controls="clr-namespace:MainApp.UI.Common.Views" x:Class="MainApp.UI.Common.Views.Implementations.Views.Controls.PageCollectionViews">
 	<StackLayout>
 		<StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
-			<Label Text="Working with picker" x:Name="label"/>
-			<Picker WidthRequest="100" HorizontalOptions="Fill">
-				<Picker.Items>
-					<x:String>Font = 8</x:String>
-					<x:String>Font = 10</x:String>
-					<x:String>Font = 16</x:String>
-				</Picker.Items>
-				<Picker.SelectedIndex>
-					<Binding Source="{x:Reference label}" Path="FontSize">
-						<Binding.Converter>
-							<converters:ObjectToIndexConverter x:TypeArguments="x:Double">
-								<x:Double>8</x:Double>
-								<x:Double>10</x:Double>
-								<x:Double>16</x:Double>
-							</converters:ObjectToIndexConverter>
-						</Binding.Converter>
-					</Binding>
-				</Picker.SelectedIndex>
-			</Picker>
-		</StackLayout>
-		<StackLayout Orientation="Horizontal" HorizontalOptions="Fill" HeightRequest="200">
-			<Label Text="Working with listview. Type something in textBox" />
-			<ListView x:Name="listView" HorizontalOptions="Fill" SeparatorColor="Blue" ItemsSource="{Binding Items}" 
-								SelectedItem="{Binding Source={x:Reference textbox}, Path=Text, Mode=TwoWay}"
-								/>
-			<Entry x:Name="textbox" />
-		</StackLayout>
-		<StackLayout Orientation="Horizontal" HorizontalOptions="Fill" HeightRequest="200">
-			<Label Text="Working with listview. DataTemplate from code" />
-			<ListView x:Name="listView1" HorizontalOptions="Fill" SeparatorColor="Blue" ItemsSource="{Binding Items1}" />
+			<Label Text="Working with tableview" />
+			<StackLayout>
+				<TableView x:Name="tableView" Intent="Form">
+					<TableView.BindingContext>
+						<local:PersonalInformation />
+					</TableView.BindingContext>
+					<TableRoot Title="Data Form">
+						<TableSection Title="Personal Information">
+							<EntryCell Label="Name:" Text="{Binding Name}" Placeholder="Enter name" Keyboard="Text" />
+							<EntryCell Label="Email:" Text="{Binding EmailAddress}" Placeholder="Enter email address" Keyboard="Email" />
+							<EntryCell Label="Phone:" Text="{Binding PhoneNumber}" Placeholder="Enter phone number" Keyboard="Telephone" />
+							<EntryCell Label="Age:" Text="{Binding Age}" Placeholder="Enter age" Keyboard="Numeric" />
+							<SwitchCell Text="Are you a programmer?" On="{Binding IsProgrammer}" />
+							<controls:PickerCell Label="Age Range:" Title="Age Range" SelectedValue="{Binding AgeRange}">
+								<x:String>10 - 19</x:String>
+								<x:String>20 - 29</x:String>
+								<x:String>30 - 39</x:String>
+								<x:String>40 - 49</x:String>
+								<x:String>50 - 59</x:String>
+								<x:String>60 - 99</x:String>
+							</controls:PickerCell>
+							<controls:PickerCell Label="Language:" Title="Language" IsEnabled="{Binding IsProgrammer}" SelectedValue="{Binding Language}">
+								<x:String>C</x:String>
+								<x:String>C++</x:String>
+								<x:String>C#</x:String>
+								<x:String>Objective C</x:String>
+								<x:String>Java</x:String>
+								<x:String>Other</x:String>
+							</controls:PickerCell>
+							<controls:PickerCell Label="Platform:" Title="Platform" IsEnabled="{Binding IsProgrammer}" SelectedValue="{Binding Platform}">
+								<x:String>iPhone</x:String>
+								<x:String>Android</x:String>
+								<x:String>Windows Phone</x:String>
+								<x:String>Other</x:String>
+							</controls:PickerCell>
+						</TableSection>
+					</TableRoot>
+				</TableView>
+				<Label x:Name="summaryLabel" VerticalOptions="CenterAndExpand" />
+				<Button Text="Submit" HorizontalOptions="Center" Clicked="OnSubmitButtonClicked" />
+			</StackLayout>
 		</StackLayout>
 	</StackLayout>
 </ContentPage>

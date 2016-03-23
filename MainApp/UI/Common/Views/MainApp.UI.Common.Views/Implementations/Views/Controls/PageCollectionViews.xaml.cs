@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using MainApp.UI.Common.VVms;
 
 namespace MainApp.UI.Common.Views.Implementations.Views.Controls
 {
@@ -12,13 +13,23 @@ namespace MainApp.UI.Common.Views.Implementations.Views.Controls
 	{
 		public PageCollectionViews()
 		{
-			InitializeComponent();
+			try {
+				InitializeComponent();
+			} catch (Exception ex) {
+				
+			}
+		}
 
-			DataTemplate dataTemplate = new DataTemplate(typeof(TextCell));
-			dataTemplate.SetBinding(TextCell.TextProperty, "Name");
-			dataTemplate.SetBinding(TextCell.DetailProperty, new Binding() { Path = "Name", StringFormat = "The number is {0} " });
-
-			listView1.ItemTemplate = dataTemplate;
+		void OnSubmitButtonClicked(object sender, EventArgs args)
+		{
+			PersonalInformation personalInfo = (PersonalInformation)tableView.BindingContext;
+			summaryLabel.Text = String.Format(
+				"{0} is {1} years old, and has an email address " +
+				"of {2}, and a phone number of {3}, and is {4}" +
+				"a programmer.",
+				personalInfo.Name, personalInfo.Age,
+				personalInfo.EmailAddress, personalInfo.PhoneNumber,
+				personalInfo.IsProgrammer ? "" : "not ");
 		}
 	}
 }

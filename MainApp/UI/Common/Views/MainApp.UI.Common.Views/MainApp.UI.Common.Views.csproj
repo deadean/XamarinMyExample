@@ -113,6 +113,9 @@
     <Compile Include="Implementations\Xaml\IconExtension.cs" />
     <Compile Include="Implementations\Xaml\ImageFromFileExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\Implementations\Picker\PickerCell.xaml.cs">
+      <DependentUpon>PickerCell.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ExifLib">
@@ -166,6 +169,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Implementations\Images\Xaml\" />
+    <Folder Include="Controls\Implementations\Picker\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Common\Library\Library.csproj">
@@ -196,6 +200,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Implementations\Views\MainPage\MainPage.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Implementations\Picker\PickerCell.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

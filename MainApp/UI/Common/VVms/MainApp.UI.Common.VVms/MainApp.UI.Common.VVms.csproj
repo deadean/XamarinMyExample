@@ -85,6 +85,7 @@
     <Compile Include="Implementations\ViewModels\XAML\PageResourceDictionaryVm.cs" />
     <Compile Include="Implementations\ViewModels\XAML\PageStyleVm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Implementations\ViewModels\Controls\PersonalInformation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ExifLib">
@@ -165,6 +166,10 @@
     <ProjectReference Include="..\..\MainApp.UI.Common\MainApp.UI.Common.csproj">
       <Project>{091E2EDB-68C1-4E91-A38D-9ADEAAAD1F82}</Project>
       <Name>MainApp.UI.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Common\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit\Xamarin.FormsBook.Toolkit.csproj">
+      <Project>{58EEAFFF-D1BB-4375-AEFC-8270F8415DCE}</Project>
+      <Name>Xamarin.FormsBook.Toolkit</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
