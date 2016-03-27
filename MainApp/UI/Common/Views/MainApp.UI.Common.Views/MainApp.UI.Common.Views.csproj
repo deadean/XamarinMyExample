@@ -116,6 +116,9 @@
     <Compile Include="Controls\Implementations\Picker\PickerCell.xaml.cs">
       <DependentUpon>PickerCell.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Implementations\Views\Services\PageWorkingWithFiles.xaml.cs">
+      <DependentUpon>PageWorkingWithFiles.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ExifLib">
@@ -203,6 +206,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Implementations\Picker\PickerCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementations\Views\Services\PageWorkingWithFiles.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

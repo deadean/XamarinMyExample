@@ -47,6 +47,8 @@ using System.Linq;
 using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms;
+using MainApp.UI.Common.Views;
+using MainApp.UI.Common.VVms;
 
 namespace MainApp
 {
@@ -195,6 +197,7 @@ namespace MainApp
 			navService.Register<TabItemXamarinFeaturesVm, PageTapGestureRecognizer, TapGestureRecognizerVm>();
 			navService.Register<TabItemXamarinFeaturesVm, PageDataBinding, PageDataBindingVm>();
 			navService.Register<TabItemServicesVm, PageIPlatformInfo, PageIPlatformInfoVm>();
+			navService.Register<TabItemServicesVm, PageWorkingWithFiles, PageWorkingWithFilesVm>();
 			//navService.Register<MainPageVm, PageSelectPhoto, PageSelectPhotoVm>();
 			//navService.Register<MainPageVm, PageSelectPhoto, PageSelectPhotoForSyncVm>();
 			//navService.Register<MainPageVm, PagePreferences, PagePreferencesVm>();

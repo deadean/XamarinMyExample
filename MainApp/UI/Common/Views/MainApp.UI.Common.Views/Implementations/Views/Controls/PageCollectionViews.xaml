@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:converters="clr-namespace:MainApp.UI.Common.Views.Controls.Converters" xmlns:local="clr-namespace:MainApp.UI.Common.VVms;assembly=MainApp.UI.Common.VVms" xmlns:controls="clr-namespace:MainApp.UI.Common.Views" x:Class="MainApp.UI.Common.Views.Implementations.Views.Controls.PageCollectionViews">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:converters="clr-namespace:MainApp.UI.Common.Views.Controls.Converters" 
+	xmlns:local="clr-namespace:MainApp.UI.Common.VVms;assembly=MainApp.UI.Common.VVms" 
+	xmlns:controls="clr-namespace:MainApp.UI.Common.Views" 
+	x:Name="page"
+	x:Class="MainApp.UI.Common.Views.Implementations.Views.Controls.PageCollectionViews">
 	<StackLayout>
 		<StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
 			<Label Text="Working with tableview" />
@@ -38,10 +43,33 @@
 								<x:String>Other</x:String>
 							</controls:PickerCell>
 						</TableSection>
+						<TableSection>
+							<ViewCell>
+								<Label Text="Second table Section " />
+							</ViewCell>
+						</TableSection>
 					</TableRoot>
 				</TableView>
 				<Label x:Name="summaryLabel" VerticalOptions="CenterAndExpand" />
 				<Button Text="Submit" HorizontalOptions="Center" Clicked="OnSubmitButtonClicked" />
+			</StackLayout>
+		</StackLayout>
+		<StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+			<Label Text="Working with tableview. Intent=Menu" />
+			<StackLayout>
+				<TableView Intent="Menu" VerticalOptions="Fill" BindingContext="{x:Reference page}" x:Name="tb">
+					<TableRoot>
+						<TableSection Title="Move the Box">
+							<TextCell Text="Left" Command="{Binding MoveCommand}" CommandParameter="left" />
+							<TextCell Text="Up" Command="{Binding MoveCommand}" CommandParameter="up" />
+							<TextCell Text="Right" Command="{Binding MoveCommand}" CommandParameter="right" />
+							<TextCell Text="Down" Command="{Binding MoveCommand}" CommandParameter="down" />
+						</TableSection>
+					</TableRoot>
+				</TableView>
+				<AbsoluteLayout BackgroundColor="Maroon" VerticalOptions="FillAndExpand">
+					<BoxView x:Name="boxView" Color="Blue" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.2, 0.2" />
+				</AbsoluteLayout>
 			</StackLayout>
 		</StackLayout>
 	</StackLayout>

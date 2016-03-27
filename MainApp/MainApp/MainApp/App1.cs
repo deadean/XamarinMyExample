@@ -185,6 +185,7 @@ namespace MainApp
 			navService.Register<TabItemXamarinFeaturesVm, PageDeviceStartTimer, PageDeviceStartTimerVm>();
 			navService.Register<TabItemXamarinFeaturesVm, PageTapGestureRecognizer, TapGestureRecognizerVm>();
 			navService.Register<TabItemServicesVm, PageIPlatformInfo, PageIPlatformInfoVm>();
+			//navService.Register<TabItemServicesVm, PageWorking, PageIPlatformInfoVm>();
 			//navService.Register<MainPageVm, PageSelectPhoto, PageSelectPhotoVm>();
 			//navService.Register<MainPageVm, PageSelectPhoto, PageSelectPhotoForSyncVm>();
 			//navService.Register<MainPageVm, PagePreferences, PagePreferencesVm>();

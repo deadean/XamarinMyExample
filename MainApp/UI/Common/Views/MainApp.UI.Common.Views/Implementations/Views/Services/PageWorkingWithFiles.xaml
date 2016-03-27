@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MainApp.UI.Common.Views.PageWorkingWithFiles">
+	<ContentPage.Content>
+		<StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+			<Label Text="See console output!" FontSize="Large" TextColor="Red" />
+			<StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+				<Button Text="Run using await" Command="{Binding RunUsingAwaitCommand}" />
+				<Button Text="Run using call func" Command="{Binding RunCallingFuncCommand}" />
+				<Button Text="Run using Task.Run" Command="{Binding RunUsingTaskRunCommand}" />
+			</StackLayout>
+			<StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+				<Button Text="Run using Task.Run and await" Command="{Binding RunUsingTaskRunAndAwaitCommand}" />
+			</StackLayout>
+			<StackLayout>
+				<Grid VerticalOptions="FillAndExpand">
+					<ContentView Padding="10, 0" VerticalOptions="Center">
+						<ProgressBar x:Name="progressBar" />
+					</ContentView>
+					<Image x:Name="image" />
+				</Grid>
+				<Button x:Name="calculateButton" Text="Calculate" FontSize="Large" HorizontalOptions="Center" Clicked="OnCalculateButtonClicked" />
+				<Button x:Name="cancelButton" Grid.Column="1" Text="Cancel" FontSize="Large" IsEnabled="False" HorizontalOptions="Center" Clicked="OnCancelButtonClicked" />
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

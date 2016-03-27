@@ -24,6 +24,7 @@ namespace MainApp.UI.Common.VVms.Implementations.ViewModels.MainPage
 			: base(name)
 		{
 			Menus.Add(new MenuItemVm("IPlatformInfo", new AsyncCommand(OnIPlatformInfoClick)));
+			Menus.Add(new MenuItemVm("Working with files", new AsyncCommand(OnWorkingWithFilesClick)));
 		}
 		
 
@@ -38,6 +39,11 @@ namespace MainApp.UI.Common.VVms.Implementations.ViewModels.MainPage
 		private Task OnIPlatformInfoClick()
 		{
 			return this.modNavigationService.NavigateAsync<TabItemServicesVm, PageIPlatformInfoVm>(this);
+		}
+
+		private Task OnWorkingWithFilesClick()
+		{
+			return this.modNavigationService.NavigateAsync<TabItemServicesVm, PageWorkingWithFilesVm>(this);
 		}
 
 		#endregion
