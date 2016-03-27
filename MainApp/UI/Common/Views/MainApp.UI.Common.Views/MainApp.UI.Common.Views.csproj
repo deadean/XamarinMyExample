@@ -119,6 +119,9 @@
     <Compile Include="Implementations\Views\Services\PageWorkingWithFiles.xaml.cs">
       <DependentUpon>PageWorkingWithFiles.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Implementations\Views\Controls\PageTransforms.xaml.cs">
+      <DependentUpon>PageTransforms.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ExifLib">
@@ -213,6 +216,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Implementations\Views\Services\PageWorkingWithFiles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Implementations\Views\Controls\PageTransforms.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

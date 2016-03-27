@@ -89,6 +89,7 @@
     <Compile Include="Implementations\ViewModels\Services\PageWorkingWithFilesVm.cs" />
     <Compile Include="Implementations\ViewModels\Services\MandelbrotModel.cs" />
     <Compile Include="Implementations\ViewModels\Services\MandelbrotViewModel.cs" />
+    <Compile Include="Implementations\ViewModels\Controls\PageTransformsVm.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ExifLib">
