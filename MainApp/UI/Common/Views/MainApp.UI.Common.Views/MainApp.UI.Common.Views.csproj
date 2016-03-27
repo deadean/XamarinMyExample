@@ -199,6 +199,10 @@
       <Project>{8711265B-1D11-4481-8129-90F56B6D2CB8}</Project>
       <Name>MainApp.UI.Common.VVms</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\Data\MainApp.UI.Data\MainApp.UI.Data.csproj">
+      <Project>{3E1BD44C-9E1D-4743-B0EF-B2BE0427F15B}</Project>
+      <Name>MainApp.UI.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Implementations\Views\MainPage\MainPage.xaml">
