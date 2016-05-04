@@ -35,8 +35,10 @@ namespace MPMediaPickerControlleriOSExample
 			};
 			this.btnPlay.TouchUpInside += (s, e) => {
 				try {
+					PrintITunesSongs();
 					//this.musicPlayer.NowPlayingItem = new MPMediaItem(){};
 					this.musicPlayer.Play ();
+					//this.musicPlayer.NowPlayingItem.al
 					//var test = this.musicPlayer.NowPlayingItem;
 					//var mediatype = this.musicPlayer.NowPlayingItem.MediaType;
 					//var diatype = this.musicPlayer.NowPlayingItem.
@@ -68,7 +70,15 @@ namespace MPMediaPickerControlleriOSExample
 				mq.AddFilterPredicate (predicate);
 
 				foreach (var item in mq.Items) {
+					if(item.Title == "Song for Someone")
+					{
+						System.Diagnostics.Debug.WriteLine (item.AlbumArtistPersistentID + " " + item.AlbumPersistentID + " "+ 
+							item.ArtistPersistentID + " "+ item.ComposerPersistentID + " "+ item.GenrePersistentID + " "+ 
+							item.PersistentID + " "+ item.PodcastPersistentID);
+						MPMediaItemCollection col = new MPMediaItemCollection(new MPMediaItem[]{item});
+						this.musicPlayer.SetQueue(col);
 
+					}
 					if (item.Artist != null) {
 						Console.WriteLine (item.Artist);
 					}
@@ -87,11 +97,11 @@ namespace MPMediaPickerControlleriOSExample
 		private async void MediaPicker_ItemsPicked (object sender,
 		                                            ItemsPickedEventArgs e)
 		{
-			PrintITunesSongs ();
+			//PrintITunesSongs ();
 			foreach (var item in e.MediaItemCollection.Items) {
 				var url = item.AssetURL;
 				if (url != null) {
-					Export (url);
+					//Export (url);
 					return;
 				}
 				System.Diagnostics.Debug.WriteLine (item.AlbumArtist + item.AlbumTitle + item.Artist + item.AssetURL + item.DebugDescription + item.Description + item.MediaType + item.PlaybackDuration + item.Title + item.ToString ());
