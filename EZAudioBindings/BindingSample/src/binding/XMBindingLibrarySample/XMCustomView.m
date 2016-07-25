@@ -83,7 +83,7 @@
         [plot sizeToFit];
         
         EZAudioPlot *plot1 = [[EZAudioPlot alloc] init];
-        plot1.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+        plot1.backgroundColor = [UIColor colorWithRed:0.51 green:0.51 blue:0.51 alpha:1.0];
         plot1.shouldMirror = YES;
         plot1.shouldFill = YES;
         plot1.frame = [super bounds];
